@@ -6,31 +6,7 @@ const Home = () => {
   return (
     <div className="home-page" style={{ backgroundColor: "red" }}>
       <Navbar />
-      {/* <HeroCarousel/> */}
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <HeroCarousel/>
     </div>
   );
 };
