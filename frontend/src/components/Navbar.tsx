@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../../public/images/logo1.svg";
+import styles from "../styles/scss/Navbar.module.scss";
 
 const Navbar = () => {
   return (
@@ -30,7 +31,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="nav-item dropdown">
+            <li className={`${styles.loki} nav-item dropdown   `}>
               <a
                 className="nav-link"
                 href="#"
@@ -121,7 +122,6 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-
   );
 };
 
