@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../public/images/logo1.svg";
 
 const Navbar = () => {
@@ -66,14 +67,14 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    BLOGS{" "}
-                  </a>
+                  <Link href="/contact">
+                    BLOGS
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    TEAM{" "}
-                  </a>
+                  <Link href="/contact">
+                    TEAM
+                  </Link>
                 </li>
               </ul>
             </li>
