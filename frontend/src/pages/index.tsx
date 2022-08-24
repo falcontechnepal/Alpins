@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../components/about/Index";
 import HeroCarousel from "../components/HeroCarousel";
 import Navbar from "../components/Navbar";
 
@@ -6,30 +7,7 @@ const Home = () => {
   return (
     <div className="home-page" style={{ backgroundColor: "red" }}>
       <Navbar />
-      {/* <HeroCarousel/> */}
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     <About/>
 
     </div>
   );
