@@ -1,14 +1,24 @@
 import React from "react";
-import About from "../components/about/Index";
-import HeroCarousel from "../components/HeroCarousel";
+import AboutSection from "../components/AboutSection";
+import CardCarousel from "../components/CardCarousel";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import NewsLetter from "../components/NewsLetter";
+
+import TopService from "../components/TopService";
 
 const Home = () => {
   return (
-    <div className="home-page" style={{ backgroundColor: "red" }}>
+    <div className="home-page">
       <Navbar />
-     <About/>
-
+      {/* <HeroCarousel /> */}
+      {/* <CardCarousel /> */}
+      <AboutSection />
+      <TopService />
+      <NewsLetter />
+      <Footer />
+      <CardCarousel />
+      
     </div>
   );
 };
