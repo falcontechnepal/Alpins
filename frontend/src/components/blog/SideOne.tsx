@@ -4,15 +4,19 @@ import CardComponent from './CardComponent';
 const SideOne = () => {
   return (
     <>
-    <div className="container">
-  <CardComponent/>
+    <div className='mt-5'>
+      <h2 className="h2 fw-bold mb-4">Our Blog</h2>
+      <CardComponent/>
 
-<CardComponent/>
+      <CardComponent/>
 
-<CardComponent/>
+      <CardComponent/>
 
-<CardComponent/>
-</div>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+      <CardComponent/>
+    </div>
 
     </>
   )

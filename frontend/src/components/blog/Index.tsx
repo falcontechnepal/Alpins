@@ -6,29 +6,29 @@ import SideTwo from "./SideTwo";
 const Myblog = () => {
   return (
     <>
-   <div className= {`${styles.mainContainer} container fluid `}>
-  {/* <div className="container ">
-    <SideOne/>
-  </div>
-  <div className="container">
-    <SideTwo/>
-  </div> */}
-{/* <div className="container"> */}
-
-<div className="row gap-1">
-    <div className="col-8">
-    <SideOne/>
+   <div className= {`${styles.mainContainer} container`}>
+    {/* <div className="container ">
+      <SideOne/>
     </div>
-    <div className="col-3">
-    <SideTwo/>
-    </div>
-  </div>
+    <div className="container">
+      <SideTwo/>
+    </div> */}
+  {/* <div className="container"> */}
 
-  </div>
-{/* </div> */}
-    
-    </>
-  )
-}
+  <div className="row gap-3">
+      <div className="col-md-8">
+        <SideOne/>
+      </div>
+      <div className="col">
+        <SideTwo/>
+      </div>
+    </div>
+
+    </div>
+  {/* </div> */}
+      
+      </>
+    )
+  }
 
 export default Myblog
