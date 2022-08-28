@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className="row">
                     <div className={`${style.leftBody} col-md-6`}>
                         {/* <h1>Amazing Mountan to explore</h1> */}
-                        <h1 className={`${style.heading} h1 w-50`}>Amazing Mountain to explore</h1>
+                        <h1 className={`${style.heading} h1 w-md-50`}>Amazing Mountain to explore</h1>
                         <p>Do not follow where the path may lead. Go instead where there is no path and leave a trail.</p>
                     </div>
                     <div className={`${style.rightBody} col-md-6`}>

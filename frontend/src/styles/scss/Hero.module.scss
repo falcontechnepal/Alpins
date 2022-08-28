@@ -20,11 +20,11 @@ $xl: 1200px;
         z-index: 2;
 
         @media screen and (max-width: $lg) {
-            margin-top: 8rem;
+            margin-top: 4rem;
         }
         
         @media screen and (max-width: $md) {
-            margin-top: 8rem;
+            margin-top: 4rem;
             display: block;
         }
         
@@ -35,6 +35,10 @@ $xl: 1200px;
                 font-weight: 900;
                 text-transform: uppercase;
                 margin-bottom: 2.5em;
+
+                @media (max-width: $sm) {
+                    margin-bottom: 1.5em;
+                }
             }
 
             .heading{
@@ -47,7 +51,7 @@ $xl: 1200px;
                 margin-bottom: 100px;
                 
                 @media (max-width: $lg) {
-                    width: 70%;
+                    width: 100%;
                     margin-bottom: 50px;
                 }
             }
