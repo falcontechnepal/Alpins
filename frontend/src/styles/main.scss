@@ -10,17 +10,6 @@ $Montserrat-font: 'Montserrat';
     font-family: $Montserrat-font;
 }
 
-// h1, h2, h3, h4 {
-//     font-weight: 900
-// }
-
-$display-font-sizes: (
-  1: 15rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
-);
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";

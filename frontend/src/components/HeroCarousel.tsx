@@ -1,74 +1,83 @@
-import React from "react";
-import Image from "next/image";
-import img1 from "../../public/images/1.jpeg";
-import img2 from "../../public/images/2.jpeg";
-import img3 from "../../public/images/3.jpeg";
+import React from 'react'
+import Slider from 'react-slick'
+import style from '../styles/scss/HeroCarousel.module.scss'
 
 const HeroCarousel = () => {
-  return (
-    <div>
-      <div
-        id="carouselExampleCaptions"
-        className="carousel slide"
-        data-bs-ride="false"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-label="Slide 1"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-            className=""
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-            className=""
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <Image src={img1} alt="" />
+    const settings = ({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        easing: 'linear',
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
 
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+      });
+  
+      return (
+    <div className={`${style.cover} container my-5 gap-5`}>
+      <Slider {...settings} className={`${style.slider} d-flex gap-5`}>
+        {/* <div className="container"> */}
+            <div className={`${style.carasoule}`}>
+                <div className={`${style.image}`}>
+                    <img src='https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80' alt='image' />
+                </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <Image src={img2} alt="" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+            <div className={`${style.carasoule}`}>
+                <div className={`${style.image}`} >
+                    <img src='https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt='image' />
+                </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <Image src={img3} alt="" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+            <div className={`${style.carasoule}`}>
+                <div className={`${style.image}`}>
+                    <img src='https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt='image' />
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+            <div className={`${style.carasoule}`}>
+                <div className={`${style.image}`}>
+                    <img src='https://images.unsplash.com/photo-1504288145234-919e7bbc6d19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt='image' />
+                </div>
+            </div>
+            <div className={`${style.carasoule}`}>
+                <div className={`${style.image}`}>
+                    <img src='https://images.unsplash.com/photo-1519261959468-137656974aa0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80' alt='image' />
+                </div>
+            </div>
+            <div className={`${style.carasoule}`}>
+                <div className={`${style.image}`}>
+                    <img src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' alt='image' />
+                </div>
+            </div>
+        {/* </div> */}
+      </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default HeroCarousel;
+export default HeroCarousel
