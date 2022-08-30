@@ -19,7 +19,7 @@ const HeroCarousel = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                },
+                }
             },
 
             {
@@ -27,7 +27,7 @@ const HeroCarousel = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                },
+                }
             },
 
             {
@@ -35,10 +35,10 @@ const HeroCarousel = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                },
+                }
             },
-        ],
-      });
+        ]
+      })
   
       return (
     <div className={`${style.cover} container my-5 gap-5`}>

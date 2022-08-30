@@ -1,15 +1,22 @@
 import React from 'react'
 import Pagehero from '../components/Pagehero'
-import Tabs from '../components/Food/Tabs'
 import Navbar from '../components/Navbar'
+import Review from '../components/about/Review'
+import Discover from '../components/about/Discover'
+import Timelinecar from '../components/about/Timelinecar'
 
 const about = () => {
   return (
     <div>
       <Navbar />
       <Pagehero title='About Us' />
-      <Tabs />
-      <Tabs />
+      <Review />
+      <div className="discover py-5" style={{ backgroundColor: 'rgb(238, 243, 247)' }}>
+        <Discover />
+      </div>
+      <div className="my-5 my-md-4 my-sm-2">
+        <Timelinecar />
+      </div>
     </div>
   )
 }
