@@ -6,12 +6,6 @@ const SideOne = () => {
     <>
     <div className="container">
   <CardComponent/>
-
-<CardComponent/>
-
-<CardComponent/>
-
-<CardComponent/>
 </div>
 
     </>
