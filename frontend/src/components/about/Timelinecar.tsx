@@ -12,7 +12,7 @@ const Timelinecar = () => {
         mobileFirst: true,
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 770,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -25,7 +25,7 @@ const Timelinecar = () => {
         <Slider {...settings}>
             {/* <div className="container"></div> */}
             {timeline.map((timeline, index) => (
-                <div key={index} className='d-flex d-md-block align-items-center gap-4'>
+                <div key={index} className='d-sm-flex align-items-center gap-4'>
                     <div className="time">
                         <h4 className="h4 fw-bold">{timeline.year}</h4>
                         <p>{timeline.work}</p>
