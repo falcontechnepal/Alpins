@@ -28,19 +28,20 @@ const Navbar = () => {
                 <form className="d-flex" role="search">
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                     <Link href="/">
-                      <li className="nav-item pageLi">
-                        <a
-                          className="nav-link   h6 fw-bold  navLi"
-                          aria-current="page"
-                        >
-                          HOME
-                        </a>
-                      </li>
+                      <button type="button" className="navColor h6 fw-bold ">
+                        HOME
+                      </button>
                     </Link>
 
-                    <li className="nav-item  dropdown">
+                    <Link href="/">
+                      <button type="button" className="navColor h6 fw-bold ">
+                        HOME
+                      </button>
+                    </Link>
+
+                    <li className="nav-item dropdown  fw-bold">
                       <a
-                        className="nav-link h6 fw-bold navLi dropdown-toggle"
+                        className="nav-link dropdown-toggle fw-bold"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -93,36 +94,21 @@ const Navbar = () => {
                     </li>
 
                     <Link href="/trek">
-                      <li className="nav-item pageLi">
-                        <a
-                          className="nav-link   h6 fw-bold  navLi"
-                          aria-current="page"
-                        >
-                          TREKS
-                        </a>
-                      </li>
+                      <button type="button" className="navColor h6 fw-bold ">
+                        TREKS
+                      </button>
                     </Link>
 
-                    <li className="nav-item">
-                      <Link href="/blog">
-                        <a
-                          className="nav-link h6 fw-bold  pageLi navLi"
-                          aria-current="page"
-                        >
-                          BLOGS
-                        </a>
-                      </Link>
-                    </li>
+                    <Link href="/blog">
+                      <button type="button" className="navColor h6 fw-bold ">
+                        BLOGS
+                      </button>
+                    </Link>
 
                     <Link href="/contact">
-                      <li className="nav-item pageLi">
-                        <a
-                          className="nav-link h6 fw-bold  navLi"
-                          aria-current="page"
-                        >
-                          CONTACT
-                        </a>
-                      </li>
+                      <button type="button" className="navColor h6 fw-bold ">
+                        CONTACT
+                      </button>
                     </Link>
                   </ul>
                 </form>
