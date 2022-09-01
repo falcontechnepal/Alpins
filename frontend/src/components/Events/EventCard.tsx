@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const EventCard = () => {
   return (
     <div className="container py-5 ">
-      <div className="container row ">
+      <div className="container row">
         <div className="col-9  col-xl-9 col-lg-8 col-md-12">
           {/* Card */}
           <motion.div
@@ -158,7 +158,9 @@ const EventCard = () => {
           <div className="gap-5">
             <EventImageCard />
 
-            <div className="card p-3   border-0 shadow my-5" style={{ width: "18rem" }}>
+            {/* style={{ width: "18rem" }} */}
+
+            <div className="row card p-3   border-0 shadow my-5">
               <div className="card-body">
                 <FaSearchLocation
                   className="primaryColor"
@@ -171,8 +173,8 @@ const EventCard = () => {
               </div>
             </div>
 
-            {/*  */}
-            <div className="card p-3 border-0 shadow " style={{ width: "18rem" }}>
+            {/* style={{ width: "18rem" }} */}
+            <div className="row card p-3   border-0 shadow my-5">
               <div className="card-body">
                 <TbMessages
                   className="primaryColor"
