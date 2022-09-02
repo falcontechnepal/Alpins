@@ -1,8 +1,8 @@
-import React from 'react'
-import Contactform from '../components/Contactform'
-import Maps from '../components/Maps'
-import Navbar from '../components/Navbar'
-import Price from '../components/Price'
+import React from "react";
+import Contactform from "../components/Contactform";
+import Footer from "../components/Footer";
+import Maps from "../components/Maps";
+import Navbar from "../components/Navbar";
 
 const contact = () => {
   return (
@@ -10,9 +10,9 @@ const contact = () => {
       <Navbar />
       <Maps />
       <Contactform />
-      <Price />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default contact
+export default contact;

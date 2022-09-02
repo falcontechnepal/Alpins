@@ -3,7 +3,7 @@ import style from '../styles/scss/Contactform.module.scss'
 
 const Contactform = () => {
   return (
-    <div className={`${style.formBody} container`}>
+    <div className={`${style.formBody} container mb-5`}>
         <div className='row g-5'>
             <form className={`${style.contactForm} col-md-7`}>
                 <div className={style.title}>

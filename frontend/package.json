@@ -23,7 +23,8 @@
     "react-icons": "^4.4.0",
     "react-parallax": "^3.5.1",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.2",

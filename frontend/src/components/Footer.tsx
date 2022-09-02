@@ -1,65 +1,69 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAmbulance } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import styles from "../styles/scss/Footer.module.scss";
+import { ImFacebook } from "react-icons/im";
+import { BsTwitter, BsGoogle } from "react-icons/bs";
+import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
     <div className={`${styles.navSection} container-fluid`}>
-      <div className="container">
-        <div className="container p-5">
-          <div className="row p-5">
-            <div className={`${styles.navCol} col`}>
-              <h5>Alpins</h5>
-              <p className={styles.navPara}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Blanditiis mollitia, tenetur cumque dicta aperiam voluptatum
-                repellat.
+      <div className="container py-3">
+        <div className="container py-3">
+          <div className="row pt-5">
+            <div
+              className={`${styles.navCol} col-10  col-sm-10 col-md-10 col-lg-4`}
+            >
+              <h5 className="h5">Alpins</h5>
+              <p className={` ${styles.para} h6 lh-lg pt-2`}>
+                Somewhere between the bottom of the climb and the summit is the
+                answer to the mystery why we climb.
               </p>
             </div>
-            <div className={`${styles.navCol} col`}>
-              <h5>Contacts</h5>
-              <span className={styles.navPara}>San Pellegrino, BG, Italy</span>
-              <span>hello@example.com</span>
-              <span>02 123 333 444</span>
+
+            <div
+              className={`${styles.navCol} col-10 mt-5 col-sm-10 mt-sm-5 col-md-11 mt-md-5 col-lg-4 mt-lg-0`}
+            >
+              <h5 className="h5">Contacts</h5>
+              <span className={` ${styles.para} h6 pt-2 `}>
+                San Pellegrino, BG, Italy
+              </span>
+              <span className={` ${styles.para} h6 pt-2 `}>
+                hello@example.com
+              </span>
+              <span className={` ${styles.para} h6 pt-2 `}>02 123 333 444</span>
             </div>
-            <div className="col">
+            <div className="col-10 mt-5 col-md-10 col-sm-10 mt-sm-5 mt-md-5 col-lg-4 mt-lg-0 ">
               <div className="row ">
-                <div className={styles.iconRow}>
+                <div className={`${styles.iconRow} gap-2`}>
                   <Link href={"https://www.google.com"}>
-                    <FontAwesomeIcon
-                      className={styles.facebook}
-                      icon={faAmbulance}
-                    />
+                    <div className={`${styles.facebook} py-1 px-2 `}>
+                      <ImFacebook className={`${styles.navIcon} p-1`} />
+                    </div>
                   </Link>
 
                   <Link href={"https://www.google.com"}>
-                    <FontAwesomeIcon
-                      className={styles.twitter}
-                      icon={faAmbulance}
-                    />
+                    <div className={`${styles.twitter} py-1 px-2 `}>
+                      <BsTwitter className={`${styles.navIcon} p-1`} />
+                    </div>
                   </Link>
 
                   <Link href={"https://www.google.com"}>
-                    <FontAwesomeIcon
-                      className={styles.instagram}
-                      icon={faAmbulance}
-                    />
+                    <div className={`${styles.instagram} py-1 px-2 `}>
+                      <RiInstagramFill className={`${styles.navIcon} p-1`} />
+                    </div>
                   </Link>
 
                   <Link href={"https://www.google.com"}>
-                    <FontAwesomeIcon
-                      className={styles.google}
-                      icon={faAmbulance}
-                    />
+                    <div className={`${styles.google} py-1 px-2 `}>
+                      <BsGoogle className={`${styles.navIcon} p-1`} />
+                    </div>
                   </Link>
                 </div>
 
-                <p className={styles.navPara3}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima rerum fugiat voluptas quas, in at, assumenda, ad
-                  dolorem natus exercitationem facilis eius.
+                <p className={` ${styles.para} h6 pt-4 lh-lg `}>
+                  Subscribe to our newsletter of follow us on the social
+                  channels to stay tuned.
                 </p>
               </div>
             </div>
@@ -68,26 +72,24 @@ const Footer = () => {
       </div>
       <hr />
 
-      <div className="container px-5">
-        <div className="container px-5">
-          <div className="row px-3">
-            <p className="col">
-              © 2019 Alpins - Hiking & Outdoor Template Handmade by&nbsp;
-              <a className={styles.link} href={"https://www.google.com"}>
-                falcontech.com
-              </a>
-            </p>
-            <p className={`${styles.nevSection} col text-end`}>
-              <a className={styles.link} href={"https://www.google.com"}>
-                <span className={styles.link}> Contact us</span>
-              </a>
-              <span className="px-2">|</span>
+      <div className="container">
+        <div className="row container ">
+          <p className="col col-12 lh-base m col-xl-8 col-lg-8 col-md-12 col-sm-12">
+            © 2019 Alpins - Hiking & Outdoor Template Handmade by&nbsp;
+            <a className="link" href={"https://www.google.com"}>
+              falcontech.com
+            </a>
+          </p>
+          <p className="col ">
+            <a className="link" href={"https://www.google.com"}>
+              <span> Contact us</span>
+            </a>
+            <span className="px-2">|</span>
 
-              <a className={styles.link} href={"https://www.facebook.com"}>
-                Privacy policy
-              </a>
-            </p>
-          </div>
+            <a className="link" href={"https://www.facebook.com"}>
+              Privacy policy
+            </a>
+          </p>
         </div>
       </div>
     </div>

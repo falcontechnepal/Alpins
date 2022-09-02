@@ -2,11 +2,11 @@ import React from "react";
 
 const Accordion = () => {
   return (
-    <div className="accordion" id="accordionFlushExample">
-      <div className="accordion-item">
-        <h2 className="accordion-header" id="flush-headingOne">
+    <div className="accordion shadow-sm border-0 " id="accordionFlushExample">
+      <div className="accordion-item  ">
+        <h2 className="accordion-header " id="flush-headingOne">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button mainColor collapsed h6"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne"
@@ -15,8 +15,6 @@ const Accordion = () => {
           >
             Our mountains and our location
           </button>
-
-          
         </h2>
         <div
           id="flush-collapseOne"
@@ -25,16 +23,18 @@ const Accordion = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            Placeholder content for this accordion, which is intended to
-            demonstrate the <code>.accordion-flush</code> class. This is the
-            first accordion body.
+            <p className="paraColor">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first accordion body.
+            </p>
           </div>
         </div>
       </div>
-      <div className="accordion-item">
+      <div className="accordion-item ">
         <h2 className="accordion-header" id="flush-headingTwo">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button mainColor collapsed h6"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseTwo"
@@ -51,17 +51,19 @@ const Accordion = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            Placeholder content for this accordion, which is intended to
-            demonstrate the <code>.accordion-flush</code> class. This is the
-            second accordion body. imagine this being filled with some actual
-            content.
+            <p className="paraColor">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              second accordion body. imagine this being filled with some actual
+              content.
+            </p>
           </div>
         </div>
       </div>
-      <div className="accordion-item">
+      <div className="accordion-item ">
         <h2 className="accordion-header" id="flush-headingThree">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button mainColor collapsed h6"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseThree"
@@ -78,12 +80,14 @@ const Accordion = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            Placeholder content for this accordion, which is intended to
-            demonstrate the <code>.accordion-flush</code> class. This is the
-            third accordion body. Nothing more exciting happening here in terms
-            of content, but just filling up the space to make it look, at least
-            at first glance, a bit more representative of how this would look in
-            a real-world application.
+            <p className="paraColor">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              third accordion body. Nothing more exciting happening here in
+              terms of content, but just filling up the space to make it look,
+              at least at first glance, a bit more representative of how this
+              would look in a real-world application.
+            </p>
           </div>
         </div>
       </div>
