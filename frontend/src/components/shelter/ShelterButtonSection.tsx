@@ -13,7 +13,7 @@ const ShelterButtonSection = () => {
     <div>
       {/* 4 button  */}
       <div className="container d-flex justify-content-center">
-        <div className="row py-5">
+        <div className="row container py-5">
           <ul
             className="nav nav-pills mb-3 gap-4"
             id="pills-tab"
@@ -79,7 +79,7 @@ const ShelterButtonSection = () => {
         </div>
       </div>
 
-      <div className="tab-content" id="pills-tabContent">
+      <div className="tab-content " id="pills-tabContent">
         {/* Home Content */}
         <div
           className="tab-pane fade show active"
@@ -87,8 +87,8 @@ const ShelterButtonSection = () => {
           role="tabpanel"
           aria-labelledby="pills-home-tab"
         >
-          <div className="container pb-5  mb-5 px-5">
-            <div className="container px-5">
+          <div className="container pb-5  mb-5">
+            <div className="container ">
               <div className="row px-4">
                 <div className="col-6">
                   <Swiper
