@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../public/images/logo1.svg";
-import styles from "../styles/scss/Navbar.module.scss";
+// import styles from "../../src/styles/scss/"
 
 const Navbar = () => {
   return (
@@ -31,7 +32,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className={`${styles.loki} nav-item dropdown   `}>
+            {/* <li className={`${styles.loki} nav-item dropdown   `}> */}
               <a
                 className="nav-link"
                 href="#"
@@ -67,17 +68,17 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    BLOGS{" "}
-                  </a>
+                  <Link href="/contact">
+                    BLOGS
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    TEAM{" "}
-                  </a>
+                  <Link href="/contact">
+                    TEAM
+                  </Link>
                 </li>
               </ul>
-            </li>
+            {/* </li> */}
 
             <li className="nav-item dropdown">
               <a
@@ -122,6 +123,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+
   );
 };
 
