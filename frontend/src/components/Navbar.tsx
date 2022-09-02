@@ -33,11 +33,7 @@ const Navbar = () => {
                       </button>
                     </Link>
 
-                    <Link href="/">
-                      <button type="button" className="navColor h6 fw-bold ">
-                        HOME
-                      </button>
-                    </Link>
+                
 
                     <li className="nav-item dropdown  fw-bold">
                       <a
