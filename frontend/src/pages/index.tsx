@@ -1,36 +1,16 @@
 import React from "react";
-import HeroCarousel from "../components/HeroCarousel";
+import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Tabs from "../components/Food/Tabs";
+// import HeroCarousel from "../components/HeroCarousel";
 
 const Home = () => {
   return (
-    <div className="home-page" style={{ backgroundColor: "red" }}>
+    <div className="home-page">
       <Navbar />
-      {/* <HeroCarousel/> */}
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      {/* <HeroCarousel /> */}
+      <Hero />
+      <Tabs />
     </div>
   );
 };

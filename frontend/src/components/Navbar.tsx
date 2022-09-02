@@ -1,13 +1,10 @@
 import React from "react";
-import Popper from "popper.js";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../public/images/logo1.svg";
-// import "../styles/scss/_navbar.scss"
 
 const Navbar = () => {
   return (
-    // <div>
-
     <nav
       className="navbar navbar-expand-lg bg-dark"
       style={{ height: "100px" }}
@@ -70,14 +67,14 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    BLOGS{" "}
-                  </a>
+                  <Link href="/contact">
+                    BLOGS
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    TEAM{" "}
-                  </a>
+                  <Link href="/contact">
+                    TEAM
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -126,7 +123,6 @@ const Navbar = () => {
       </div>
     </nav>
 
-    // </div>
   );
 };
 

@@ -10,12 +10,20 @@
     "sass": "sass --watch src/styles/main.scss:src/styles/main.css"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-slick": "^0.23.10",
     "bootstrap": "^5.2.0",
+    "framer-motion": "^7.2.1",
     "next": "12.2.5",
     "popper.js": "^1.16.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-countup": "^6.3.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-parallax": "^3.5.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.2",
@@ -24,7 +32,6 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
-    "sass": "^1.54.5",
     "typescript": "4.7.4"
   }
 }
