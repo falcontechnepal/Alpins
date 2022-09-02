@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/images/logo1.svg";
+// import styles from "../../src/styles/scss/"
 
 const Navbar = () => {
   return (
@@ -31,7 +32,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="nav-item dropdown">
+            {/* <li className={`${styles.loki} nav-item dropdown   `}> */}
               <a
                 className="nav-link"
                 href="#"
@@ -77,7 +78,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
-            </li>
+            {/* </li> */}
 
             <li className="nav-item dropdown">
               <a
