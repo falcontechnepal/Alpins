@@ -1,8 +1,24 @@
 import React from 'react'
 import { tabs, dinner } from './tabSource'
 import style from '../../styles/scss/Tabs.module.scss'
+import { motion } from 'framer-motion'
+
 
 const Tabs = () => {
+    const container = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                delayChildren: 0.5
+            }
+        }
+    }
+
+    const item = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1 }
+    }
   return (
     <div className='container mt-5'>
         <h1 className='h1 text-center fw-bold'>Food</h1>
@@ -24,8 +40,8 @@ const Tabs = () => {
         </ul>
         {/* tab contents */}
         <div className="tab-content" id="pills-tabContent">
-            <div className="tab-pane fade show active" id="launch" role="tabpanel">
-                <div className="row">
+            <motion.div variants={ container } initial='hidden' animate='show' className="tab-pane fade show active" id="launch" role="tabpanel">
+                <motion.div variants={ item } className="row">
                     {tabs.map((tab, index) => (
                         <div key={index} className="col-md-6 mb-5">
                             <div className="card border-0 d-xs-flex gap-3 flex-row">
@@ -42,13 +58,13 @@ const Tabs = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
             <div className="tab-pane fade" id="dinner" role="tabpanel">
                 <div className="row">
                     {dinner.map((dinner, index) => (
                         <div key={index} className="col-md-6 mb-5">
-                            <div className="card border-0 d-flex gap-5 gap-xs-2 flex-row">
+                            <div className="card border-0 d-flex gap-3 gap-xs-2 flex-row">
                                 <div className="img">
                                     <img src={dinner.img} alt="" className={`${style.image}`} />
                                 </div>
@@ -65,10 +81,10 @@ const Tabs = () => {
                 </div>
             </div>
             <div className="tab-pane fade" id="breakfast" role="tabpanel">
-            <div className="row">
+                <div className="row">
                     {dinner.map((dinner, index) => (
                         <div key={index} className="col-md-6 mb-5">
-                            <div className="card border-0 d-flex gap-5 gap-xs-2 flex-row">
+                            <div className="card border-0 d-flex gap-3 gap-xs-2 flex-row">
                                 <div className="img">
                                     <img src={dinner.img} alt="" className={`${style.image}`} />
                                 </div>
@@ -85,10 +101,10 @@ const Tabs = () => {
                 </div>
             </div>
             <div className="tab-pane fade" id="special" role="tabpanel">
-            <div className="row">
+                <div className="row">
                     {dinner.map((dinner, index) => (
                         <div key={index} className="col-md-6 mb-5">
-                            <div className="card border-0 d-flex gap-5 gap-xs-2 flex-row">
+                            <div className="card border-0 d-flex gap-3 gap-xs-2 flex-row">
                                 <div className="img">
                                     <img src={dinner.img} alt="" className={`${style.image}`} />
                                 </div>
