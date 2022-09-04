@@ -3,10 +3,10 @@ import styles from "../../styles/scss/Event.module.scss";
 
 const EventImageCard = () => {
   return (
-    <div className="col-3">
+    <div className="col col-12 col-sm-12">
       <div
-        className={`${styles.cardBg} card pt-5 p-3 co border-0 shadow-sm`}
-        style={{ width: "18rem" }}
+        className={`${styles.cardBg} card pt-5 co border-0 shadow-sm`}
+        // style={{ width: "18rem" }}
       >
         <div className="card-body pt-5 ">
           <div className="pt-5">

@@ -3,8 +3,8 @@ import person1 from "../../../public/person/1.avif";
 
 const SingleTrekComponent1 = () => {
   return (
-    <div style={{ backgroundColor: "white" }}>
-      <div className="container py-5">
+    <div style={{ backgroundColor: "white" }} className="container-fluid">
+      <div className="container">
         <div className="row container py-5">
           <div className="col-12 mb-5 col-sm-12  col-md-12 col-lg-6 ">
             <p className="mainColor lh-lg ">

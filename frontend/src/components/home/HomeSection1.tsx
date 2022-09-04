@@ -11,7 +11,7 @@ import { RiCalendar2Fill } from "react-icons/ri";
 
 const HomeSection1 = () => {
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div style={{ backgroundColor: "white" }} className="container-fluid">
       <div className="container py-5">
         <div className="row container  ">
           <div className="col-xl-8 mt-5 col-lg-8 ">
@@ -290,7 +290,7 @@ const HomeSection1 = () => {
 
             <button
               type="button"
-              className={ `${styles.customButton} btn btn-lg ms-3 mt-4 rounded-pill px-4 `}
+              className={`${styles.customButton} btn btn-lg ms-3 mt-4 rounded-pill px-4 `}
             >
               Join us
             </button>

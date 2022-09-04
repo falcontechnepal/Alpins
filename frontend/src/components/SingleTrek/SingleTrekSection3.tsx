@@ -1,6 +1,7 @@
 const SingleTrekSection3 = () => {
   return (
-    <div className="container py-5">
+    <div className="container-fluid py-5">
+    <div className="container">
       <div className="row container py-5">
         <div className="col col-12 col-md-12 mb-5 col-sm-12 ">
           <h5 className=" fw-bold mainColor">High difficulty</h5>
@@ -44,6 +45,7 @@ const SingleTrekSection3 = () => {
             <li className=" liStyleRm mainColor col">12 days</li>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const TreksServiceCard = () => {
   return (
-    <div style={{ backgroundColor: " white" }}>
+    <div style={{ backgroundColor: " white" }} className="container-fluid">
       <div className="container py-5">
         <div className="row container">
           <div className="row">

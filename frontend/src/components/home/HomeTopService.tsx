@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const HomeTopService = () => {
   return (
-    <div style={{ backgroundColor: "#fefeff" }} className="py-5">
+    <div style={{ backgroundColor: "#fefeff" }} className="py-5 container-fluid">
       <div className="container my-5">
         <div className="row container ">
           <div className="row">

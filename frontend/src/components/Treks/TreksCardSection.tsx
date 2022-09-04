@@ -2,8 +2,9 @@ import TrekCard from "./TrekCard";
 
 const TreksCardSection = () => {
   return (
-    <div style={{ backgroundColor: "#EFF3F6" }}>
+    <div style={{ backgroundColor: "#EFF3F6" }} className="container-fluid" >
       <div className="container py-5 ">
+      <div className="container ">
         {/* navTab */}
         <ul
           className="nav nav-pills mx-2 mb-3 py-3 fw-bolder gap-3 "
@@ -194,6 +195,7 @@ const TreksCardSection = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
