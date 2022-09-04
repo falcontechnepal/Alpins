@@ -2,6 +2,37 @@ import React from 'react'
 import Slider from 'react-slick'
 import { discover } from './reviewSource'
 import style from '../../styles/scss/Discovercar.module.scss'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+
+const initial = {
+    hidden: {
+        opacity: 0,
+        y: 200,
+    },
+
+    visible: {
+        opacity: 1,
+        y: 0,
+
+        transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2,
+        }
+    }
+}
+
+const item = {
+    hidden: {
+        y: 200,
+        opacity: 0,
+    },
+
+    visible: {
+        y: 0,
+        opacity: 1,
+    }
+}
 
 const Discovercar = () => {
     const settings = ({
@@ -35,19 +66,19 @@ const Discovercar = () => {
   return (
     <Slider {...settings} className={style.slider}>
         {discover.map((discover, index) => (
-            <div key={index} className={style.key}>
+            <motion.div variants={ initial } initial='hidden' animate='visible' key={index} className={style.key}>
                 {/* <div className="row row-cols-1"> */}
-                    <div className="card-group m-2">
+                    <motion.div variants={item} className="card-group m-2">
                         <div className={`${style.myCard} card border-0`} >
-                            <img className='card-img-top' src={discover.image} alt="" />
+                            <Image className='card-img-top' src={discover.image} alt="" height={500} width={500} />
                             <div className="card-body p-3">
                                 <div className="card-title text-center h4 my-3 fw-bold">{discover.heading}</div>
                                 <div className="card-text text-center mb-4">{discover.desc}</div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 {/* </div> */}
-            </div>
+            </motion.div>
         ))}
     </Slider>
   )

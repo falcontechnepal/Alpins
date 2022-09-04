@@ -55,11 +55,9 @@ const Contactform = () => {
                         <p>skype.name</p>
                     </div>
                     <div className="btn-group mt-4" role="group">
-                        <button className="btn btn-primary">FB</button>
-                        <button className="btn btn-primary">FB</button>
-                        <button className="btn btn-primary">FB</button>
-                        <button className="btn btn-primary">FB</button>
-                        <button className="btn btn-primary">FB</button>
+                        <button className={`${style.myButton}`}><BsFacebook fontSize='1.3em' style={{ color: '#379cf4' }} /></button>
+                        <button className={`${style.myButton}`}><BsTwitter fontSize='1.3em' style={{ color: '#379cf4' }} /></button>
+                        <button className={`${style.myButton}`}><BsInstagram fontSize='1.3em' style={{ color: '#379cf4' }} /></button>
                     </div>
                 </div>
             </div>

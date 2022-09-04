@@ -2,7 +2,6 @@ import React from 'react'
 import Contactform from '../components/Contactform'
 import Maps from '../components/Maps'
 import Navbar from '../components/Navbar'
-import Price from '../components/Price'
 
 const contact = () => {
   return (
@@ -10,7 +9,6 @@ const contact = () => {
       <Navbar />
       <Maps />
       <Contactform />
-      <Price />
     </div>
   )
 }
