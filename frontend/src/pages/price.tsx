@@ -16,7 +16,6 @@ export default function Price() {
         <PriceCardSection/>
         <PriceSection2/>
         <Footer/>
-  
     </div>
   )
 }

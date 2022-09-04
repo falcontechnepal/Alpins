@@ -12,7 +12,7 @@ const EventCard = () => {
     <div style={{ backgroundColor: "white" }} className="container-fluid">
       <div className="container py-5 ">
         <div className="container row">
-          <div className="col-12 col-sm-12 col-xl-9 col-lg-8 col-md-12">
+          <div className="col-12 col-sm-12 col-xl-9 col-lg-12 col-md-12 ">
             {/* Card */}
             <motion.div
               whileHover={{ scale: 0.95 }}
@@ -156,42 +156,38 @@ const EventCard = () => {
 
           {/*Two  Icon Card */}
 
-          
-          <div className="col  col-xl-3 col-md-12 col-lg-3 ">
+          <div className="col  col-xl-3 col-md-12   col-lg-12 ">
             <div className="container">
-            <div className="gap-5">
-              <EventImageCard />
+              <div className="gap-5">
+                <EventImageCard />
 
-              {/* style={{ width: "18rem" }} */}
-
-              <div className="row card p-3   border-0 shadow my-5">
-                <div className="card-body">
-                  <FaSearchLocation
-                    className="primaryColor"
-                    style={{ fontSize: "45px" }}
-                  />
-                  <h5 className="mainColor h5 pt-3">Event organizers</h5>
-                  <p className="paraColor card-text lh-base pt-1">
-                    We are searching for event organizers
-                  </p>
+                <div className="row card p-3   border-0 shadow my-5">
+                  <div className="card-body">
+                    <FaSearchLocation
+                      className="primaryColor"
+                      style={{ fontSize: "45px" }}
+                    />
+                    <h5 className="mainColor h5 pt-3">Event organizers</h5>
+                    <p className="paraColor card-text lh-base pt-1">
+                      We are searching for event organizers
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              {/* style={{ width: "18rem" }} */}
-              <div className="row card p-3   border-0 shadow my-5">
-                <div className="card-body">
-                  <TbMessages
-                    className="primaryColor"
-                    style={{ fontSize: "45px" }}
-                  />
-                  <h5 className="mainColor h5 pt-3">Need help?</h5>
-                  <p className="paraColor card-text lh-base pt-1">
-                    Contact us if have any event inquery
-                  </p>
+                <div className="row card p-3   border-0 shadow my-5">
+                  <div className="card-body">
+                    <TbMessages
+                      className="primaryColor"
+                      style={{ fontSize: "45px" }}
+                    />
+                    <h5 className="mainColor h5 pt-3">Need help?</h5>
+                    <p className="paraColor card-text lh-base pt-1">
+                      Contact us if have any event inquery
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

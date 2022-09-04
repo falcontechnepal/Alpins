@@ -2,8 +2,8 @@ const SingleTrekSection2 = () => {
   return (
     <div className="container-fluid py-5">
       <div className="container">
-        <div className="row container py-5 ">
-          <div className="col pb-4 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div className="row container pb-4 ">
+          <div className="col  pb-4 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <p className=" lh-lg mainColor">
               Lorem ipsum dolor sit amet consectetur adipiscing elitsed do
               eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim
