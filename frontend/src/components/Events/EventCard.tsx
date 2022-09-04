@@ -157,34 +157,32 @@ const EventCard = () => {
           {/*Two  Icon Card */}
 
           <div className="col  col-xl-3 col-md-12   col-lg-12 ">
-            <div className="container">
-              <div className="gap-5">
-                <EventImageCard />
+            <div className="">
+              <EventImageCard />
 
-                <div className="row card p-3   border-0 shadow my-5">
-                  <div className="card-body">
-                    <FaSearchLocation
-                      className="primaryColor"
-                      style={{ fontSize: "45px" }}
-                    />
-                    <h5 className="mainColor h5 pt-3">Event organizers</h5>
-                    <p className="paraColor card-text lh-base pt-1">
-                      We are searching for event organizers
-                    </p>
-                  </div>
+              <div className="row card p-3   border-0 shadow my-5">
+                <div className="card-body">
+                  <FaSearchLocation
+                    className="primaryColor"
+                    style={{ fontSize: "45px" }}
+                  />
+                  <h5 className="mainColor h5 pt-3">Event organizers</h5>
+                  <p className="paraColor card-text lh-base pt-1">
+                    We are searching for event organizers
+                  </p>
                 </div>
+              </div>
 
-                <div className="row card p-3   border-0 shadow my-5">
-                  <div className="card-body">
-                    <TbMessages
-                      className="primaryColor"
-                      style={{ fontSize: "45px" }}
-                    />
-                    <h5 className="mainColor h5 pt-3">Need help?</h5>
-                    <p className="paraColor card-text lh-base pt-1">
-                      Contact us if have any event inquery
-                    </p>
-                  </div>
+              <div className="row card p-3   border-0 shadow my-5">
+                <div className="card-body">
+                  <TbMessages
+                    className="primaryColor"
+                    style={{ fontSize: "45px" }}
+                  />
+                  <h5 className="mainColor h5 pt-3">Need help?</h5>
+                  <p className="paraColor card-text lh-base pt-1">
+                    Contact us if have any event inquery
+                  </p>
                 </div>
               </div>
             </div>

@@ -37,7 +37,7 @@ const SingleTrekComponent1 = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                   laborum.
                 </p>
-                <a href="#" className="link">
+                <a href="https://falcontechnepal.com" className="link">
                   Social Link
                 </a>
               </div>
