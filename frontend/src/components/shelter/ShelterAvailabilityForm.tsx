@@ -1,7 +1,7 @@
 const ShelterAvailabilityForm = () => {
   return (
-    <div style={{ backgroundColor: "#eef2f6" }}>
-      <div className="container py-5 ">
+    <div style={{ backgroundColor: "#eef2f6" }} className="container-fluid">
+      <div className="container ">
         <div className="row container py-3 ">
           <div className=" row">
             <div className="mb-3 col col-md-12 col-sm-12 col-12 col-lg-3 col-xl-3">

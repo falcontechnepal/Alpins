@@ -14,7 +14,7 @@ const ShelterSection1 = () => {
     <div style={{ backgroundColor: "#EFF3F6" }}>
       <div className="container py-5">
         <div className="row container py-2 px-4">
-          <Swiper
+          {/* <Swiper
             slidesPerView={4}
             spaceBetween={90}
             slidesPerGroup={1}
@@ -25,15 +25,72 @@ const ShelterSection1 = () => {
             }}
             modules={[Pagination]}
             className="mySwiper"
+          > */}
+
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+
+              800: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+
+              1400: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
           >
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                style={{ width: "18rem" }}
+                // style={{ width: "18rem" }}
               >
                 <div className="card-body">
                   <MdDinnerDining className="iconLg" />
-                  <h4 className="mainColor h4  pt-3">Event organizers</h4>
+                  <h4 className="mainColor h4  pt-3">Event Organizers</h4>
+                  <p className="paraColor card-text lh-base pt-1">
+                    We are searching for event organizers
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+            
+              <div
+                className="card p-3 border-0 shadow-sm my-5"
+                // style={{ width: "18rem" }}
+              >
+                <div className="card-body">
+                  <MdDinnerDining className="iconLg" />
+                  <h4 className="mainColor h4  pt-3">Breakfast</h4>
                   <p className="paraColor card-text lh-base pt-1">
                     We are searching for event organizers
                   </p>
@@ -44,22 +101,7 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                style={{ width: "18rem" }}
-              >
-                <div className="card-body">
-                  <GiRunningShoe className="iconLg" />
-                  <h4 className="mainColor h4 pt-3">Breakfast</h4>
-                  <p className="paraColor card-text lh-base pt-1">
-                    Take a break in our refuges and hunts.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div
-                className="card p-3 border-0 shadow-sm my-5"
-                style={{ width: "18rem" }}
+                // style={{ width: "18rem" }}
               >
                 <div className="card-body">
                   <FaSearchLocation className="iconLg" />
@@ -74,7 +116,7 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                style={{ width: "18rem" }}
+                // style={{ width: "18rem" }}
               >
                 <div className="card-body">
                   <FaCaravan className="iconLg" />
@@ -89,7 +131,7 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                style={{ width: "18rem" }}
+                // style={{ width: "18rem" }}
               >
                 <div className="card-body">
                   <FaSearchLocation className="iconLg" />
