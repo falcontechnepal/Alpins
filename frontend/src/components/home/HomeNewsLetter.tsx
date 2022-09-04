@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import styles from "../../styles/scss/Home.module.scss";
+
 
 const HomeNewsLetter = () => {
   return (
@@ -33,7 +35,7 @@ const HomeNewsLetter = () => {
           <div className="col  col-lg-4  d-grid gap-2 col-md-12 col-sm-12  mt-4">
             <motion.button
               whileHover={{ scale: 0.98 }}
-              className="btn customButton"
+              className=    { `${styles.customButton} btn  `} 
               type="button"
             >
               Subscribe

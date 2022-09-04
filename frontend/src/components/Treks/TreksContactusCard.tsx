@@ -1,3 +1,5 @@
+import styles from "../../styles/scss/Treks.module.scss";
+
 const TreksContactusCard = () => {
   return (
     <div style={{ backgroundColor: "white" }}>
@@ -16,7 +18,7 @@ const TreksContactusCard = () => {
               </div>
             </div>
             <div className="col col-12  col-md-3 col-sm-12  mt-sm-0 mb-3 ">
-              <a href="#" className="btn  customButton px-4 py-2">
+              <a href="#" className={`${styles.customButton} btn px-4 py-2`}>
                 Contact us
               </a>
             </div>
