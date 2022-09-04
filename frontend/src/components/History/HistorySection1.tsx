@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const HistorySection1 = () => {
   return (
-    <div style={{ overflow: "hidden" }} className="container-fluid "  >
-      <div className="container py-5 ">
+    <div style={{ overflow: "hidden" }} className="container-fluid ">
+      <div className="container ">
         <div className="container row py-5">
           {/* Left side========================*/}
           <div className="col col-12 col-sm-12 col-md-12 col-lg-8 ">
@@ -138,19 +138,19 @@ const HistorySection1 = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
               </Swiper>
             </div>
