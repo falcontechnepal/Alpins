@@ -1,0 +1,60 @@
+.navSection {
+  background-color: #12314a;
+  color: #fefeff;
+
+  .iconRow {
+    color: white;
+    display: flex;
+
+    .facebook {
+      background-color: #3b5899;
+
+      cursor: pointer;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      &:hover {
+        background-color: #379cf4;
+      }
+    }
+    .twitter {
+      background-color: #3b8bcb;
+      cursor: pointer;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      &:hover {
+        background-color: #379cf4;
+      }
+    }
+    .instagram {
+      background-color: #474746;
+      cursor: pointer;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      &:hover {
+        background-color: #379cf4;
+      }
+    }
+    .google {
+      background-color: #d6463d;
+      cursor: pointer;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      &:hover {
+        background-color: #379cf4;
+      }
+    }
+  }
+}
+
+.navCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.navIcon {
+  font-size: 30px;
+}

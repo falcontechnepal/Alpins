@@ -6,28 +6,30 @@ import { motion } from "framer-motion";
 const initial = {
   hidden: {
     opacity: 0,
-    x: -200,
+    y: -200,
   },
 
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
 
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,
+      ease: 'easeIn',
+      // duration: 0.7,
     },
   },
 };
 
 const item = {
   hidden: {
-    x: -200,
+    y: -200,
     opacity: 0,
   },
 
   visible: {
-    x: 0,
+    y: 0,
     opacity: 1,
   },
 };

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from 'react-slick'
 import { discover } from './reviewSource'
 import style from '../../styles/scss/Discovercar.module.scss'
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import Image from 'next/image'
 
 const initial = {
@@ -16,13 +16,16 @@ const initial = {
         y: 0,
 
         transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.2,
-        }
-    }
+            ease: 'easeIn',
+            duration: 0.7,
+            delayChildren: 0.5,
+            staggerChildren: 0.8,
+        },
+    },
 }
 
 const item = {
+    
     hidden: {
         y: 200,
         opacity: 0,
@@ -31,10 +34,29 @@ const item = {
     visible: {
         y: 0,
         opacity: 1,
+
+        transition: {
+            ease: 'easeInOut',
+            duration: '.5',
+            
+            viewport: {
+                once: true,
+            }
+        },
+
     }
 }
 
 const Discovercar = () => {
+    // const controls = useAnimation();
+    // const [ref, inview] = useInView()
+
+    // useEffect(() => {
+    //     if (inView) {
+    //         controls.start('visible')
+    //     }
+    // }, [controls, inView])
+
     const settings = ({
         dots: true,
         infinite: true,
@@ -66,11 +88,11 @@ const Discovercar = () => {
   return (
     <Slider {...settings} className={style.slider}>
         {discover.map((discover, index) => (
-            <motion.div variants={ initial } initial='hidden' animate='visible' key={index} className={style.key}>
+            <motion.div variants={ initial } initial='hidden' animate='visible' whileInView='onscreen' viewport={{ once: true, amount: 0.8 }} key={index} className={style.key}>
                 {/* <div className="row row-cols-1"> */}
-                    <motion.div variants={item} className="card-group m-2">
+                    <motion.div variants={item} viewport={{ once: true }} className="card-group m-2">
                         <div className={`${style.myCard} card border-0`} >
-                            <Image className='card-img-top' src={discover.image} alt="" height={500} width={500} />
+                            <img className='card-img-top' src={discover.image} alt="" />
                             <div className="card-body p-3">
                                 <div className="card-title text-center h4 my-3 fw-bold">{discover.heading}</div>
                                 <div className="card-text text-center mb-4">{discover.desc}</div>
