@@ -5,7 +5,7 @@ import {FaGooglePlusG} from "react-icons/fa";
 
 
 
-const SideOneSingle = () => {
+const SingleSideOne = () => {
   return (
     <>
 <div className="col ">
@@ -41,4 +41,4 @@ Possimus ea iure facere minima cum harum tenetur, quibusdam suscipit optio sint 
   )
 }
 
-export default SideOneSingle
+export default SingleSideOne;
