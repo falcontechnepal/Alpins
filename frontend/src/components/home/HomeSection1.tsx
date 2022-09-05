@@ -38,6 +38,9 @@ const HomeSection1 = () => {
               modules={[Pagination]}
               className="mySwiper swiper-container"
             >
+
+
+              {/* Card 1============================== */}
               <SwiperSlide>
                 <div className="card mb-5 border-0 rounded">
                   <Image src={person1} className=" rounded" alt="" />
@@ -50,7 +53,7 @@ const HomeSection1 = () => {
                       <div className="row ">
                         <div className="col">
                           <h5 className="primaryColor h5">5</h5>
-                          <p className="whiteColor">Days</p>
+                          <p className="whiteColor">Dfays</p>
                         </div>
                         <div className="col">
                           <h5 className="primaryColor h5">13</h5>
@@ -84,6 +87,10 @@ const HomeSection1 = () => {
                   </div>
                 </div>
               </SwiperSlide>
+              {/* ========================== */}
+
+              {/* Card 2====================== */}
+
 
               <SwiperSlide>
                 <div className="card mb-5 border-0 rounded">
@@ -96,149 +103,8 @@ const HomeSection1 = () => {
                     <div className="card-body">
                       <div className="row ">
                         <div className="col">
-                          <h5 className="primaryColor h5">3</h5>
-                          <p className="whiteColor">Days</p>
-                        </div>
-                        <div className="col">
-                          <h5 className="primaryColor h5">13</h5>
-                          <p className="whiteColor">Group Size</p>
-                        </div>
-                        <div className="col">
-                          <h5 className="primaryColor h5">Medium</h5>
-                          <p className="whiteColor">Difficulty</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-body">
-                    <h4 className="mainColor pt-3  h4 fw-bold">
-                      Bianco Excursion
-                    </h4>
-                    <p className="mainColor pt-3 lh-lg  card-text">
-                      This is a wider card with supporting text below as a
-                      natural village.
-                    </p>
-                    <div className="col">
-                      <h6 className="mainColor h6 ">
-                        <RiCalendar2Fill
-                          style={{ fontSize: "20px" }}
-                          className="primaryColor me-2"
-                        />
-                        01 October 2019 at 8.00 PM
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="card mb-5 border-0 rounded">
-                  <Image src={person1} className=" rounded" alt="" />
-
-                  <div
-                    className="card mx-2 "
-                    style={{ backgroundColor: "#12314a" }}
-                  >
-                    <div className="card-body">
-                      <div className="row ">
-                        <div className="col">
-                          <h5 className="primaryColor h5">3</h5>
-                          <p className="whiteColor">Days</p>
-                        </div>
-                        <div className="col">
-                          <h5 className="primaryColor h5">13</h5>
-                          <p className="whiteColor">Group Size</p>
-                        </div>
-                        <div className="col">
-                          <h5 className="primaryColor h5">Medium</h5>
-                          <p className="whiteColor">Difficulty</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-body">
-                    <h4 className="mainColor pt-3  h4 fw-bold">
-                      Bianco Excursion
-                    </h4>
-                    <p className="mainColor pt-3 lh-lg  card-text">
-                      This is a wider card with supporting text below as a
-                      natural village.
-                    </p>
-                    <div className="col">
-                      <h6 className="mainColor h6 ">
-                        <RiCalendar2Fill
-                          style={{ fontSize: "20px" }}
-                          className="primaryColor me-2"
-                        />
-                        01 October 2019 at 8.00 PM
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="card mb-5 border-0 rounded">
-                  <Image src={person1} className=" rounded" alt="" />
-
-                  <div
-                    className="card mx-2 "
-                    style={{ backgroundColor: "#12314a" }}
-                  >
-                    <div className="card-body">
-                      <div className="row ">
-                        <div className="col">
-                          <h5 className="primaryColor h5">3</h5>
-                          <p className="whiteColor">Days</p>
-                        </div>
-                        <div className="col">
-                          <h5 className="primaryColor h5">13</h5>
-                          <p className="whiteColor">Group Size</p>
-                        </div>
-                        <div className="col">
-                          <h5 className="primaryColor h5">Medium</h5>
-                          <p className="whiteColor">Difficulty</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="card-body">
-                    <h4 className="mainColor pt-3  h4 fw-bold">
-                      Bianco Excursion
-                    </h4>
-                    <p className="mainColor pt-3 lh-lg  card-text">
-                      This is a wider card with supporting text below as a
-                      natural village.
-                    </p>
-                    <div className="col">
-                      <h6 className="mainColor h6 ">
-                        <RiCalendar2Fill
-                          style={{ fontSize: "20px" }}
-                          className="primaryColor me-2"
-                        />
-                        01 October 2019 at 8.00 PM
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="card mb-5 border-0 rounded">
-                  <Image src={person1} className=" rounded" alt="" />
-
-                  <div
-                    className="card mx-2 "
-                    style={{ backgroundColor: "#12314a" }}
-                  >
-                    <div className="card-body">
-                      <div className="row ">
-                        <div className="col">
-                          <h5 className="primaryColor h5">3</h5>
-                          <p className="whiteColor">Days</p>
+                          <h5 className="primaryColor h5">5</h5>
+                          <p className="whiteColor">Dfays</p>
                         </div>
                         <div className="col">
                           <h5 className="primaryColor h5">13</h5>

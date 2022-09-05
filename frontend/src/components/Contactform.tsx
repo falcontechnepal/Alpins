@@ -45,25 +45,25 @@ const Contactform = () => {
         </form>
         <div className={`${style.contactInfo} col`}>
           <div className={style.infoTitle}>
-            <h4>CONTACTS</h4>
+            <h4 className="mainColor">CONTACTS</h4>
             <p>Information</p>
           </div>
           <div className={style.info}>
             <div className={style.infoText}>
               <h6>Address</h6>
-              <p>Kathmandu, Nepal</p>
+              <p>Basundhara, Kathmandu, Nepal</p>
             </div>
             <div className={style.infoText}>
               <h6>Web</h6>
-              <p>website.com</p>
+              <p>www.ancienthimalayantreks.com</p>
             </div>
             <div className={style.infoText}>
               <h6>Phone</h6>
-              <p>(+977) 980000000</p>
+              <p>+977 9851337204</p>
             </div>
             <div className={style.infoText}>
               <h6>Skype</h6>
-              <p>skype.name</p>
+              <p>ancientHimalayan</p>
             </div>
             <div className="btn-group mt-4" role="group">
               <button className="btn btn-primary">FB</button>
