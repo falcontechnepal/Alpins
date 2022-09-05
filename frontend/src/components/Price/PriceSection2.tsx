@@ -1,16 +1,11 @@
-import styles from "../../styles/scss/price/PriceSection2.module.scss";
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination } from "swiper";
-import Image from "next/image";
-import person1 from "../../../public/images/5.jpeg";
 
 const PriceSection2 = () => {
   return (
-    <div style={{ backgroundColor: "#eef3f7" }}>
+    <div style={{ backgroundColor: "#eef3f7" }} className="container-fluid">
       <div className="container py-5">
         <div className="container row py-3">
           <div className="col-12 col-sm-12 col-md-12 col-l-6 col-xxl-6 mb-5 ">

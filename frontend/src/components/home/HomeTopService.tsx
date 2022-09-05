@@ -7,8 +7,11 @@ import { motion } from "framer-motion";
 
 const HomeTopService = () => {
   return (
-    <div style={{ backgroundColor: "#fefeff" }} className="py-5">
-      <div className="container ">
+    <div
+      style={{ backgroundColor: "#fefeff" }}
+      className="py-5 container-fluid"
+    >
+      <div className="container my-5">
         <div className="row container ">
           <div className="row">
             <h2 className="h2 fw-bolder mainColor">TOP SERVICE</h2>
@@ -18,7 +21,7 @@ const HomeTopService = () => {
           </div>
 
           <div className="row">
-            <div className={`${styles.borderBottomRight} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -28,14 +31,14 @@ const HomeTopService = () => {
                   style={{ fontSize: "50px" }}
                 />
 
-                <h5 className="h5 mainColor pt-3 pb-2">Experienced team</h5>
+                <h5 className="h5 mainColor mt-2 ">Experienced team</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
               </motion.div>
             </div>
 
-            <div className={`${styles.borderBottomRight} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -44,14 +47,14 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">Easy joining</h5>
+                <h5 className="h5 mainColor mt-2 ">Easy joining</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
               </motion.div>
             </div>
 
-            <div className={`${styles.borderBottomRight} col`}>
+            <div className="col-12 col-sm-12 col-md-6   col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -60,14 +63,14 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">Expert Hikers</h5>
+                <h5 className="h5 mainColor mt-2 ">Expert Hikers</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
               </motion.div>
             </div>
 
-            <div className={`${styles.noBorder} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -76,7 +79,7 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">Secret locations</h5>
+                <h5 className="h5 mainColor mt-2 ">Secret locations</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
@@ -85,7 +88,7 @@ const HomeTopService = () => {
           </div>
 
           <div className="row">
-            <div className={`${styles.borderLeft} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -94,14 +97,14 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">Europe locations</h5>
+                <h5 className="h5 mainColor mt-2 ">Europe locations</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
               </motion.div>
             </div>
 
-            <div className={`${styles.borderLeft} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -110,14 +113,14 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">Visit us</h5>
+                <h5 className="h5 mainColor mt-2 ">Visit us</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
               </motion.div>
             </div>
 
-            <div className={`${styles.borderLeft} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -126,14 +129,14 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">United States</h5>
+                <h5 className="h5 mainColor mt-2 ">United States</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
               </motion.div>
             </div>
 
-            <div className={`${styles.borderTop} col`}>
+            <div className="col-12 col-sm-12 col-md-6  col-lg-3 mt-5">
               <motion.div
                 whileHover={{ scale: 0.9 }}
                 className={styles.iconDiv}
@@ -142,7 +145,7 @@ const HomeTopService = () => {
                   className="primaryColor"
                   style={{ fontSize: "50px" }}
                 />
-                <h5 className="h5 mainColor pt-3 pb-2">Great waterfall</h5>
+                <h5 className="h5 mainColor mt-2 ">Great waterfall</h5>
                 <p className="lh-base paraColor">
                   Some quick example text to build on the card title and
                 </p>
