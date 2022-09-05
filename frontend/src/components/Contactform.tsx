@@ -1,5 +1,6 @@
 import React from 'react'
 import style from '../styles/scss/Contactform.module.scss'
+import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs'
 
 const Contactform = () => {
   return (
@@ -64,7 +65,7 @@ const Contactform = () => {
 
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contactform
+export default Contactform;
