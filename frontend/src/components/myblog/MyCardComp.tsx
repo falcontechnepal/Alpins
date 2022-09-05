@@ -2,7 +2,7 @@ import React from "react";
 import { RiAdminFill } from "react-icons/ri";
 import { BsCalendar } from "react-icons/bs";
 import { BsFillBookmarkFill } from "react-icons/bs";
-import styles from "../../styles/scss/Blog.module.scss";
+import styles from "../../styles/scss/myBlog.module.scss";
 
 const CardData = [
   {
@@ -31,28 +31,36 @@ const CardData = [
   },
 ];
 
-const CardComponent = () => {
+const MyCardComp = () => {
   return (
     <>
+      {/* card component start */}
+
       {CardData.map((mydata) => (
         <div
-          className={`${styles.mainCardComp} card mb-4 shadow-lg  bg-body rounded`}
+          className={`${styles.mainCardComp} card mb-4 me-5 me-md-0 shadow-lg  bg-body rounded`}
+          
         >
-          <div className="row row-cols-md-1 g-0">
-            <div className={`${styles.myimgcontainer} col col-sm-8 col-md-4 myimgcontainer`}>
+          <div className="row g-0">
+            <div className={`${styles.CardImg} col-md-4`}>
               <img
                 src={mydata.image}
-                className={`${styles.myimg} card-img rounded-start h-100`}
+                className="img-fluid rounded-start h-100 "
                 alt="..."
               />
 
               <div className={`${styles.insideimg}`}>
-                <div className="bg-primary row">
+                <div>
+                  {" "}
                   <h1>{mydata.date}</h1>
                 </div>
-                <div className="bg-dark row">{mydata.time}</div>
+                <div>
+                  {" "}
+                  <h5>{mydata.time}</h5>
+                </div>
               </div>
             </div>
+
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title">Content Box</h5>
@@ -74,10 +82,11 @@ const CardComponent = () => {
                     Trek{" "}
                   </div>
                 </p>
-                <p className="card-text text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                  eum iure esse quia obcaecati error fugiat consequuntur, quod
-                  unde voluptates, perferendis qui eligendi{" "}
+                <p className="card-text">
+                  <small className="text-muted">
+                    Lorem ipsum, dolor In impedit, expedita exercitationem quia
+                    fuga quod, iure mollitia cum iste nemo earum
+                  </small>
                 </p>
               </div>
             </div>
@@ -88,4 +97,4 @@ const CardComponent = () => {
   );
 };
 
-export default CardComponent;
+export default MyCardComp;
