@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const HistorySection1 = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
-      <div className="container py-5 ">
+    <div style={{ overflow: "hidden" }} className="container-fluid ">
+      <div className="container ">
         <div className="container row py-5">
           {/* Left side========================*/}
           <div className="col col-12 col-sm-12 col-md-12 col-lg-8 ">
@@ -25,13 +25,13 @@ const HistorySection1 = () => {
                 </p>
               </div>
 
-              <div className="col-4 loki">
+              <div className="col-4 ">
                 <h3 className="he fw-bold mainColor">1985</h3>
                 <h6 className="h6 paraColor fw-semibold ">Foundation</h6>
               </div>
             </div>
 
-            <div className="row py-3 loki">
+            <div className="row py-3 ">
               <div className="col-4 ">
                 <h3 className="he fw-bold mainColor">1990</h3>
                 <h6 className="h6 paraColor fw-semibold">Association</h6>
@@ -63,14 +63,14 @@ const HistorySection1 = () => {
                 </p>
               </div>
 
-              <div className="col-4 loki">
+              <div className="col-4 ">
                 <h3 className="he fw-bold mainColor">2002</h3>
                 <h6 className="h6 paraColor fw-semibold">Expansion</h6>
               </div>
             </div>
 
             <div className="row py-3">
-              <div className="col-4 loki">
+              <div className="col-4 ">
                 <h3 className="he fw-bold mainColor">2010</h3>
                 <h6 className="h6 paraColor fw-semibold">Complete online</h6>
               </div>
@@ -138,22 +138,20 @@ const HistorySection1 = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Image src={img1} className="py-5 px-4" alt="" />
+                  <Image src={img1} alt="" />
                 </SwiperSlide>
-
-
               </Swiper>
             </div>
           </div>

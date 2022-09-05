@@ -1,12 +1,12 @@
-import React from 'react';
-import Myblog from '../../components/blog/Index';
+import React from "react";
+import Myblog from "../../components/blog/Index";
 
 const Blog = () => {
   return (
     <>
-<Myblog/>
+      <Myblog />
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

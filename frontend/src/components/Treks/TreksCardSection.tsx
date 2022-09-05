@@ -2,8 +2,9 @@ import TrekCard from "./TrekCard";
 
 const TreksCardSection = () => {
   return (
-    <div style={{ backgroundColor: "#EFF3F6" }}>
+    <div style={{ backgroundColor: "#EFF3F6" }} className="container-fluid" >
       <div className="container py-5 ">
+      <div className="container ">
         {/* navTab */}
         <ul
           className="nav nav-pills mx-2 mb-3 py-3 fw-bolder gap-3 "
@@ -12,7 +13,7 @@ const TreksCardSection = () => {
         >
           <li className="nav-item" role="presentation">
             <button
-              className="btn shelterButton btn-lg   shadow-lg active"
+              className="btn shelterButton    shadow-lg active"
               id="pills-all-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-all"
@@ -26,7 +27,7 @@ const TreksCardSection = () => {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className="btn shelterButton btn-lg   shadow-lg"
+              className="btn shelterButton    shadow-lg"
               id="pills-hiking-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-hiking"
@@ -40,7 +41,7 @@ const TreksCardSection = () => {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className="btn shelterButton btn-lg   shadow-lg"
+              className="btn shelterButton    shadow-lg"
               id="pills-treking-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-treking"
@@ -54,7 +55,7 @@ const TreksCardSection = () => {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className="btn shelterButton btn-lg   shadow-lg"
+              className="btn shelterButton    shadow-lg"
               id="pills-canyoning-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-canyoning"
@@ -69,7 +70,7 @@ const TreksCardSection = () => {
 
           <li className="nav-item" role="presentation">
             <button
-              className="btn shelterButton btn-lg   shadow-lg"
+              className="btn shelterButton    shadow-lg"
               id="pills-adventure-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-adventure"
@@ -91,15 +92,25 @@ const TreksCardSection = () => {
             aria-labelledby="pills-all-tab"
           >
             <div className="row">
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
             </div>
           </div>
           <div
@@ -109,16 +120,20 @@ const TreksCardSection = () => {
             aria-labelledby="pills-hiking-tab"
           >
             <div className="row">
-              <div className="col-4">{/* <TrekCard /> */}</div>
-              <div className="col-4">
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
                 <TrekCard />
               </div>
 
-              <div className="col-4">
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
                 <TrekCard />
               </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
             </div>
           </div>
 
@@ -129,13 +144,17 @@ const TreksCardSection = () => {
             aria-labelledby="pills-treking-tab"
           >
             <div className="row">
-              <div className="col-4">
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
                 <TrekCard />
               </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
             </div>
           </div>
 
@@ -146,11 +165,13 @@ const TreksCardSection = () => {
             aria-labelledby="pills-canyoning-tab"
           >
             <div className="row">
-              <div className="col-4">
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
                 <TrekCard />
               </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
             </div>
           </div>
 
@@ -161,15 +182,20 @@ const TreksCardSection = () => {
             aria-labelledby="pills-adventure-tab"
           >
             <div className="row">
-              <div className="col-4">
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
                 <TrekCard />
               </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
 
-              <div className="col-4">{/* <TrekCard /> */}</div>
+              <div className="col-12 col-sm-12  col-md-6  col-lg-4 col-xl-4">
+                <TrekCard />
+              </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

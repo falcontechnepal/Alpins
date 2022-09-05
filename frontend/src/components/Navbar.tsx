@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoBlack from "../../public/images/logoBlack.svg";
 
+
 const Navbar = () => {
   return (
     <div style={{ backgroundColor: "white" }}>
