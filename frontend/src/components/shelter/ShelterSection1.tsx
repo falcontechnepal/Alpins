@@ -14,19 +14,6 @@ const ShelterSection1 = () => {
     <div style={{ backgroundColor: "#EFF3F6" }}>
       <div className="container py-5">
         <div className="row container py-2 px-4">
-          {/* <Swiper
-            slidesPerView={4}
-            spaceBetween={90}
-            slidesPerGroup={1}
-            loop={true}
-            loopFillGroupWithBlank={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          > */}
-
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -36,12 +23,12 @@ const ShelterSection1 = () => {
             breakpoints={{
               640: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
 
               768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
+                slidesPerView: 1,
+                spaceBetween: 10,
               },
 
               800: {
@@ -50,18 +37,18 @@ const ShelterSection1 = () => {
               },
 
               1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
+                slidesPerView: 2,
+                spaceBetween: 10,
               },
 
               1200: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 10,
               },
 
               1400: {
-                slidesPerView: 4,
-                spaceBetween: 50,
+                slidesPerView: 3,
+                spaceBetween: 10,
               },
             }}
             modules={[Pagination]}
@@ -70,11 +57,11 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                // style={{ width: "18rem" }}
+                // style={{ width: "20rem" }}
               >
                 <div className="card-body">
                   <MdDinnerDining className="iconLg" />
-                  <h4 className="mainColor h4  pt-3">Event Organizers</h4>
+                  <h4 className="mainColor h4  pt-3">Organizers</h4>
                   <p className="paraColor card-text lh-base pt-1">
                     We are searching for event organizers
                   </p>
@@ -83,10 +70,9 @@ const ShelterSection1 = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-            
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                // style={{ width: "18rem" }}
+                // style={{ width: "20rem" }}
               >
                 <div className="card-body">
                   <MdDinnerDining className="iconLg" />
@@ -101,13 +87,13 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                // style={{ width: "18rem" }}
+                // style={{ width: "20rem" }}
               >
                 <div className="card-body">
                   <FaSearchLocation className="iconLg" />
                   <h4 className="mainColor h4 pt-3">Trekking</h4>
                   <p className="paraColor card-text lh-base pt-1">
-                    Lots of refuges through the paths and treks
+                    Lots of refuges through the paths and
                   </p>
                 </div>
               </div>
@@ -116,7 +102,7 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                // style={{ width: "18rem" }}
+                // style={{ width: "20rem" }}
               >
                 <div className="card-body">
                   <FaCaravan className="iconLg" />
@@ -131,13 +117,13 @@ const ShelterSection1 = () => {
             <SwiperSlide>
               <div
                 className="card p-3 border-0 shadow-sm my-5"
-                // style={{ width: "18rem" }}
+                // style={{ width: "20rem" }}
               >
                 <div className="card-body">
                   <FaSearchLocation className="iconLg" />
                   <h4 className="mainColor h4 pt-3">Views </h4>
                   <p className="paraColor card-text lh-base pt-1">
-                    Enjoy amazing and unique natural views
+                    Enjoy amazing and unique natural
                   </p>
                 </div>
               </div>
