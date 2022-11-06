@@ -1,11 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
 import MailTable from "../components/mail/MailTable";
 
 function Mail() {
   return (
-    <div>
+    <>
+      <Header pageTitle={"mails"}/>
       <MailTable />
-    </div>
+    </>
   );
 }
 
