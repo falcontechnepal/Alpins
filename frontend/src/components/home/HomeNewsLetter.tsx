@@ -42,13 +42,13 @@ const HomeNewsLetter = () => {
           </div>
         </div>
 
-        <div className="form-check ">
+        <div className="form-check ms-3 ">
           <input
-            className="form-check-input "
+            className="form-check-input  "
             type="checkbox"
             id="flexCheckChecked"
           />
-          <p className="form-check-label  mt-4 paraColor">
+          <p className="form-check-label   mt-4 paraColor">
             By click subscribe you accept the terms of service and the privacy
             policy.
           </p>
