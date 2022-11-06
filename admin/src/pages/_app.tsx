@@ -6,8 +6,7 @@ import LeftAppBar from "../components/LeftBar";
 import Topbar from "../components/Topbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { Provider } from "react-redux";
-import { store } from "../../redux/store";
+import { AncientHimalayanContextProvider } from "../../context/Context";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -17,8 +16,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   const location = router.pathname.split("/")[1];
 
   return (
-    <Provider store={store}>
-      <Box className="customBg" style={{ height: "100vh" }}>
+    <AncientHimalayanContextProvider>
+      <Box
+        className="customBg"
+        style={{ height: "100vh" }}>
         <>
           {location === "login" || location === "register" ? (
             <Grid container>
@@ -28,17 +29,33 @@ function MyApp({ Component, pageProps }: AppProps) {
             <>
               <Topbar />
               <Grid container>
-                <Grid item xs={3} lg={2} className="customLeftBar">
+                <Grid
+                  item
+                  xs={3}
+                  lg={2}
+                  className="customLeftBar">
                   <LeftAppBar />
                 </Grid>
 
                 {/* Right side */}
-                <Grid item xs={9} lg={10} p={5} className="right_side_bg">
-                  <Grid item marginBottom={5} xs={6}>
-                    <Typography variant="h4" className="customPrimaryTxtColor">
+                <Grid
+                  item
+                  xs={9}
+                  lg={10}
+                  p={5}
+                  className="right_side_bg">
+                  <Grid
+                    item
+                    marginBottom={5}
+                    xs={6}>
+                    <Typography
+                      variant="h4"
+                      className="customPrimaryTxtColor">
                       Attendance
                     </Typography>
-                    <Typography variant="h6" className="customSecondaryTxtColor">
+                    <Typography
+                      variant="h6"
+                      className="customSecondaryTxtColor">
                       <span className="customPrimaryTxtColor">Dashboard / </span>
 
                       <span className="customSecondaryTxtColor">Attendance / </span>
@@ -53,7 +70,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           )}
         </>
       </Box>
-    </Provider>
+    </AncientHimalayanContextProvider>
   );
 }
 

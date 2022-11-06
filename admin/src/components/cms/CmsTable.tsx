@@ -3,10 +3,13 @@ import { IconButton } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Link from "next/link";
 import DeleteAlert from "../DeleteAlert";
-// import EditEmployeeDetailDialog from "../../@mui/EditEmployeeDetailDialog";
 import AddCmsDialog from "./AddCmsDialog";
+import { AncientHimalayanContext } from "../../../context/Context";
+import { useContext } from "react";
 
 export default function CmsTable() {
+  const { cmsData } = useContext(AncientHimalayanContext);
+  console.log(cmsData);
   return (
     <>
       <AddCmsDialog />
@@ -48,61 +51,10 @@ export default function CmsTable() {
                 <div className="d-flex ">
                   <Link href={`staffDetails/1`}>
                     <IconButton aria-label="delete">
-                      <VisibilityIcon fontSize="inherit" color="warning" />
-                    </IconButton>
-                  </Link>
-                  {/* <EditEmployeeDetailDialog /> */}
-                  <DeleteAlert />
-                </div>
-              </td>
-            </tr>
-
-            <tr className="customPrimaryTxtColor custom_table_hover ">
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-
-              <td>
-                <div className="d-flex ">
-                  <Link href={`staffDetails/1`}>
-                    <IconButton aria-label="delete">
-                      <VisibilityIcon fontSize="inherit" color="warning" />
-                    </IconButton>
-                  </Link>
-                  {/* <EditEmployeeDetailDialog /> */}
-                  <DeleteAlert />
-                </div>
-              </td>
-            </tr>
-
-            <tr className="customPrimaryTxtColor custom_table_hover ">
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-
-              <td>
-                <div className="d-flex ">
-                  <Link href={`staffDetails/1`}>
-                    <IconButton aria-label="delete">
-                      <VisibilityIcon fontSize="inherit" color="warning" />
+                      <VisibilityIcon
+                        fontSize="inherit"
+                        color="warning"
+                      />
                     </IconButton>
                   </Link>
                   {/* <EditEmployeeDetailDialog /> */}
