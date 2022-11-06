@@ -15,9 +15,9 @@ const HomeTopService = () => {
         <div className="row container ">
           <div className="row">
             <h2 className="h2 fw-bolder mainColor">TOP SERVICE</h2>
-            <h6 className="h6 mainColor my-3">
+            <h5 className="h5 mainColor my-3">
               We provide the best experience
-            </h6>
+            </h5>
           </div>
 
           <div className="row">
