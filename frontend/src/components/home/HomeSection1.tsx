@@ -183,8 +183,11 @@ const HomeSection1 = () => {
 
           <div className="col-xl-4 col-lg-4 mt-5">
             <h2 className="mainColor h2 fw-bolder ">LATEST TRIPS</h2>
-            <h6 className="mainColor h6 py-3 ">Explore the unexplored world</h6>
-            <p className="mainColor lh-lg">Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quiso. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quiso. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore .</p>
+            <h6 className="mainColor h5 py-3 ">Explore the unexplored world</h6>
+            <p className="mainColor lh-lg">
+              The Ancient Himalayas offer a remarkable journey to enjoy the majestic Himalayas with a diversified culture. Nepal, a country with thousands of destinations for trekking and hiking, is the best destination to enjoy your splendid time in nature. Your adventurous journey with Ancient Himalayas will certainly be an enthralling trip to Nepal taking the journey uphill and downhill along the greenery, peaks, glacier rivers, waterfalls, and the breathtaking view of the most beautiful
+              mountains all over the world. Enjoy the adventure, amenities, and hospitality with the best trekking agency that provides you with the best packages to the Everest Base Camp, Annapurna Base Camp, Langtang Valley Trek, and multiple others.
+            </p>
 
             <button
               type="button"
