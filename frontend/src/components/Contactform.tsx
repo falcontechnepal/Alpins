@@ -3,6 +3,37 @@ import style from '../styles/scss/Contactform.module.scss'
 import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs'
 
 const Contactform = () => {
+
+    // const [clientInquiry, setClientInquiry] = useState({
+    //     name: "",
+    //     email: "",
+    //     phone: "",
+    //     message: "",
+    //   });
+    
+    //   const handleChange = (e) => {
+    //     setClientInquiry((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    //   };
+    
+    //   const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setClientInquiry("Sending...");
+    //     dispatch(createClientInquiry(clientInquiry));
+    
+    //     const res = await axios.post(
+    //       "http://localhost:5000/api/contact",
+    //       clientInquiry
+    //     );
+    //     setClientInquiry(res.data);
+    //     console.log(res);
+    //   };
+
+
+
+
+
+
+
   return (
     <div className={`${style.formBody} container mb-5`}>
         <div className='row g-5'>
