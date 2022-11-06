@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Grid, Dialog, Button } from "@mui/material";
-import { useAppDispatch } from "../../../redux/hooks";
-import { addNewEmployee } from "../../../redux/employeesDetailSlice";
 import TextInputField from "../TextInputField";
 
 export default function AddAboutDialog() {
@@ -32,12 +30,10 @@ export default function AddAboutDialog() {
   };
   console.log(aboutValues);
 
-  const dispatch = useAppDispatch();
 
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
     console.log("Form has been submitted");
-    dispatch(addNewEmployee());
   };
 
   return (

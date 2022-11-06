@@ -45,6 +45,13 @@ const navItems = [
     label: "CMS Settings",
     route: "/cms",
   },
+
+
+  {
+    icon: <SettingsOutlinedIcon />,
+    label: "Mails",
+    route: "/mail",
+  },
 ];
 
 export default function LeftAppBar() {

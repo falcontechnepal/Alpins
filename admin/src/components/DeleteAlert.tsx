@@ -3,8 +3,11 @@ import { Button, IconButton } from "@mui/material";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { useContext } from "react";
+import { AncientHimalayanContext } from "../../context/Context";
 
 export default function DeleteAlert() {
+  const { mails, deleteMail } = useContext(AncientHimalayanContext);
   return (
     <>
       <IconButton aria-label="delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -22,7 +25,7 @@ export default function DeleteAlert() {
                 Cancell
               </Button>
 
-              <Button className="table_button " size="small">
+              <Button onClick={deleteMail} className="table_button " size="small">
                 Yes Delete
               </Button>
             </div>

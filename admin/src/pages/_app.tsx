@@ -6,8 +6,9 @@ import LeftAppBar from "../components/LeftBar";
 import Topbar from "../components/Topbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { Provider } from "react-redux";
-import { store } from "../../redux/store";
+import { AncientHimalayanContextProvider } from "../../context/Context";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -17,43 +18,56 @@ function MyApp({ Component, pageProps }: AppProps) {
   const location = router.pathname.split("/")[1];
 
   return (
-    <Provider store={store}>
-      <Box className="customBg" style={{ height: "100vh" }}>
-        <>
-          {location === "login" || location === "register" ? (
-            <Grid container>
-              <Component {...pageProps} />
-            </Grid>
-          ) : (
-            <>
-              <Topbar />
+    <>
+      <AncientHimalayanContextProvider>
+        <Box
+          className="customBg"
+          style={{ height: "100vh" }}>
+          <>
+            {location === "login" || location === "register" ? (
               <Grid container>
-                <Grid item xs={3} lg={2} className="customLeftBar">
-                  <LeftAppBar />
-                </Grid>
-
-                {/* Right side */}
-                <Grid item xs={9} lg={10} p={5} className="right_side_bg">
-                  <Grid item marginBottom={5} xs={6}>
-                    <Typography variant="h4" className="customPrimaryTxtColor">
-                      Attendance
-                    </Typography>
-                    <Typography variant="h6" className="customSecondaryTxtColor">
-                      <span className="customPrimaryTxtColor">Dashboard / </span>
-
-                      <span className="customSecondaryTxtColor">Attendance / </span>
-
-                      <span className="customSecondaryTxtColor">Something </span>
-                    </Typography>
-                  </Grid>
-                  <Component {...pageProps} />
-                </Grid>
+                <Component {...pageProps} />
               </Grid>
-            </>
-          )}
-        </>
-      </Box>
-    </Provider>
+            ) : (
+              <>
+                <Topbar />
+                <Grid container>
+                  <Grid
+                    item
+                    xs={3}
+                    lg={2}
+                    className="customLeftBar">
+                    <LeftAppBar />
+                  </Grid>
+
+                  {/* Right side */}
+                  <Grid
+                    item
+                    xs={9}
+                    lg={10}
+                    p={5}
+                    className="right_side_bg">
+                    <Component {...pageProps} />
+                  </Grid>
+                </Grid>
+              </>
+            )}
+          </>
+        </Box>
+      </AncientHimalayanContextProvider>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+    </>
   );
 }
 

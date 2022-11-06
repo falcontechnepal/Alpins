@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Grid, Dialog, Button } from "@mui/material";
-import { useAppDispatch } from "../../../redux/hooks";
-import { addNewEmployee } from "../../../redux/employeesDetailSlice";
 import TextInputField from "../TextInputField";
 
 export default function AddPortfolioProjectDialog() {
@@ -27,12 +25,10 @@ export default function AddPortfolioProjectDialog() {
   };
   console.log(portfolioValues);
 
-  const dispatch = useAppDispatch();
 
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
     console.log("Form has been submitted");
-    dispatch(addNewEmployee());
   };
 
   return (

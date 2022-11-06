@@ -1,11 +1,13 @@
 import React from "react";
 import CmsTable from "../components/cms/CmsTable";
+import Header from "../components/Header";
 
 function Cms() {
   return (
-    <div>
+    <>
+      <Header pageTitle={"cms setting"} />
       <CmsTable />
-    </div>
+    </>
   );
 }
 
