@@ -1,70 +1,85 @@
 import * as React from "react";
-import { IconButton } from "@mui/material";
-import VisibilityIcon from "@mui/icons-material/Visibility";
+import { Button } from "@mui/material";
+import Header from "../Header";
+import SingleRowTableItem from "../SingleRowTableItem";
 import Link from "next/link";
-import DeleteAlert from "../DeleteAlert";
-import AddCmsDialog from "./AddCmsDialog";
-import { AncientHimalayanContext } from "../../../context/Context";
-import { useContext } from "react";
 
-export default function CmsTable() {
-  const { cmsData } = useContext(AncientHimalayanContext);
-  console.log(cmsData);
+export default function CmsTable({ cmsData, deleteCms }: any) {
   return (
     <>
-      <AddCmsDialog />
-      <div className="customCard mt-2 ">
-        <table className="table  ">
-          <thead>
-            <tr className="customPrimaryTxtColor">
-              <th scope="col">S.N</th>
-              <th scope="col">Company Name </th>
-              <th scope="col">Logo</th>
-              <th scope="col">Phone 1</th>
-              <th scope="col">Phone 2</th>
-              <th scope="col">Email</th>
-              <th scope="col">Instagram</th>
-              <th scope="col">Facebook</th>
-              <th scope="col">Whatsapp</th>
-              <th scope="col">Twitter</th>
-              <th scope="col">Linkdin</th>
-              <th scope="col">Dribble</th>
-              <th scope="col">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="customPrimaryTxtColor custom_table_hover ">
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
+      <Header pageTitle={"Cms Setting"} />
 
-              <td>
-                <div className="d-flex ">
-                  <Link href={`staffDetails/1`}>
-                    <IconButton aria-label="delete">
-                      <VisibilityIcon
-                        fontSize="inherit"
-                        color="warning"
-                      />
-                    </IconButton>
-                  </Link>
-                  {/* <EditEmployeeDetailDialog /> */}
-                  <DeleteAlert />
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div className="d-flex gap-3 justify-content-end">
+        {cmsData && (
+          <Link href={`/cms/${cmsData._id}`}>
+            <Button
+              size="large"
+              className="customCard px-4 mb-2">
+              Edit
+            </Button>
+          </Link>
+        )}
+
+        {cmsData && (
+          <Button
+            onClick={() => deleteCms(cmsData._id)}
+            size="large"
+            className="customCard px-4 mb-2">
+            Delete
+          </Button>
+        )}
+
+        {!cmsData && (
+          <Link href={`/cms/create`}>
+            <Button
+              size="large"
+              className="customCard px-4 mb-2">
+              Create
+            </Button>
+          </Link>
+        )}
       </div>
+
+      {cmsData && (
+        <div className="row customCard">
+          <SingleRowTableItem
+            name={"Company Name"}
+            value={cmsData.companyName}
+          />
+          <SingleRowTableItem
+            name={"Company Logo"}
+            value={cmsData.companyLogo}
+          />
+          <SingleRowTableItem
+            name={"Phone 1"}
+            value={cmsData.phone1}
+          />
+          <SingleRowTableItem
+            name={"Phone 2"}
+            value={cmsData.phone2}
+          />
+          <SingleRowTableItem
+            name={"Email"}
+            value={cmsData.email}
+          />
+          <SingleRowTableItem
+            name={"WhatsApp"}
+            value={cmsData.whatsapp}
+          />
+          <SingleRowTableItem
+            name={"Twitter"}
+            value={cmsData.twitterUrl}
+          />
+          <SingleRowTableItem
+            name={"Facebook"}
+            value={cmsData.facebookUrl}
+          />
+          <SingleRowTableItem
+            name={"Instagram"}
+            value={cmsData.instagramUrl}
+          />
+        </div>
+      )}
     </>
   );
 }

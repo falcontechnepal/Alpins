@@ -10,8 +10,10 @@ const HomeHoverCard = () => {
   return (
     <div className="container-fluid">
       {/* <div className="container"> */}
-      <div className="row my-5" style={{ overflow: "hidden" }}>
-        <div className=" col-12 mb-5 col-sm-12  col-md-12  col-lg-12 col-xxl-7 ">
+      <div
+        className="row my-5"
+        style={{ overflow: "hidden" }}>
+        {/* <div className=" col-12 mb-5 col-sm-12  col-md-12  col-lg-12 col-xxl-7 ">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -175,7 +177,7 @@ const HomeHoverCard = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </div> */}
 
         {/* Right   */}
         <motion.div
@@ -183,31 +185,22 @@ const HomeHoverCard = () => {
           whileInView={{ x: [150, 0] }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, type: "tween" }}
-          className="col col-12 col-sm-12 col-md-12 col-lg-12  col-xxl-4  "
-        >
-          <div className="row ">
-            <h1 className="lh-base h1 fw-bolder pureWhite">
-              THE TREKS OF <br /> OUR TEAM
-            </h1>
-            <p className=" lh-lg mt-3 h5 whiteColor">
-              Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiure
-              <br />
-              consectetur adipisicing a didunto persmo.
-            </p>
+          className=" col-12  ">
+          <div className="  ">
+            <h1 className="lh-base h1 fw-bolder pureWhite text-center">THE TREKS OF OUR TEAM</h1>
+            <p className=" lh-lg mt-3  h5 whiteColor text-center">Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiure consectetur adipisicing a didunto persmo.</p>
           </div>
 
           {/* Two Button */}
-          <div className="col mt-4">
+          <div className="col-12 mt-5 text-center">
             <button
               type="button"
-              className={`${styles.customOutlineButton} btn btn-lg  rounded-pill `}
-            >
+              className={`${styles.customOutlineButton} btn btn-lg  rounded-pill `}>
               All Treks
             </button>
             <button
               type="button"
-              className={`${styles.customButton} btn btn-lg ms-3 rounded-pill  `}
-            >
+              className={`${styles.customButton} btn btn-lg ms-3 rounded-pill  `}>
               The Team
             </button>
           </div>
