@@ -1,7 +1,5 @@
-// Google Font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-// font variable
 $Montserrat-font: "Montserrat";
 
 * {
@@ -30,26 +28,6 @@ $Montserrat-font: "Montserrat";
   color: white;
 }
 
-// .customButton {
-//   color: whitesmoke;
-//   background-color: #379cf4;
-//   border-color: #379cf4;
-//   transition: all 0.4s ease-out;
-
-//   &:hover {
-//     color: whitesmoke;
-//     transform: scale(0.95);
-//     transition: all 0.2s ease-in;
-//     background-color: #2975b7;
-//     border-color: #2975b7;
-//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-//   }
-// }
-
-.loki {
-  background-color: red;
-}
-
 .link {
   text-decoration: none;
 }
@@ -62,7 +40,7 @@ $Montserrat-font: "Montserrat";
 }
 
 .navLi {
-  color: #444444;
+  color: white;
 }
 
 .liStyleRm {
@@ -98,24 +76,34 @@ $Montserrat-font: "Montserrat";
 
 .navColor {
   all: unset;
-  color: #444444;
+  color: rgba(255, 255, 255, 0.836);
 }
 .custom_pointer {
   cursor: pointer;
 }
 
-
-
-
-
-
 .navbar-toggler {
-  /* padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x); */
   font-size: var(--bs-navbar-toggler-font-size);
-  /* line-height: 1; */
-  /* color: var(--bs-navbar-color); */
   background-color: transparent;
-  /* border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color); */
-  /* border-radius: var(--bs-navbar-toggler-border-radius); */
   transition: var(--bs-navbar-toggler-transition);
+}
+
+.field_required_warning {
+  color: rgba(255, 0, 0, 0.856) !important;
+  font-weight: 500 !important;
+}
+
+.single_trek_img {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+.upper_case {
+  text-transform: capitalize;
+}
+
+.footer_logo {
+  position: relative;
+  height: 90px;
 }

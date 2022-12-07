@@ -1,30 +1,28 @@
 import type { AppProps } from "next/app";
 import "../../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import LeftAppBar from "../components/LeftBar";
 import Topbar from "../components/Topbar";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { AncientHimalayanContextProvider } from "../../context/Context";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MiscellaneousContextProvider } from "../../context/MiscellaneousContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     import("bootstrap");
   }, []);
   const router = useRouter();
-  const location = router.pathname.split("/")[1];
+  const location = router.pathname.split("/")[2];
 
   return (
     <>
-      <AncientHimalayanContextProvider>
-        <Box
-          className="customBg"
-          style={{ height: "100vh" }}>
+      <MiscellaneousContextProvider>
+        <div className="customBg h100">
           <>
-            {location === "login" || location === "register" ? (
+            {location === "signin" || location === "signup" ? (
               <Grid container>
                 <Component {...pageProps} />
               </Grid>
@@ -53,8 +51,8 @@ function MyApp({ Component, pageProps }: AppProps) {
               </>
             )}
           </>
-        </Box>
-      </AncientHimalayanContextProvider>
+        </div>
+      </MiscellaneousContextProvider>
       <ToastContainer
         position="top-right"
         autoClose={5000}

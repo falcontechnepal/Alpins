@@ -22,15 +22,11 @@ const cmsSchema = new mongoose.Schema(
       type: String,
     },
 
+    phone2: {
+      type: String,
+    },
+
     whatsapp: {
-      type: String,
-    },
-
-    googleUrl: {
-      type: String,
-    },
-
-    twitterUrl: {
       type: String,
     },
 
