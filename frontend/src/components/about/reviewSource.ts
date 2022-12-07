@@ -1,15 +1,15 @@
 export const review = [
     {
-        review: 'Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.',
-        photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
-        name: 'Alexa',
+        review: 'The Ancient Himalayas offer a remarkable journey to enjoy the majestic Himalayas with a diversified culture. Nepal, a country with thousands of destinations for trekking and hiking, is the best destination to enjoy your splendid time in nature.',
+        photo: 'https://res.cloudinary.com/dubzpy7hn/image/upload/v1669610339/upload/2022-11-28T04-38-59.340Z.png',
+        name: 'Sagar Khadka',
         post: 'Climber',
     },
 
     {
-        review: 'Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.',
-        photo: 'https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        name: 'Lisa',
+        review: 'With our various packages of trekking and traveling, you’ll be guided by a professional guide helping you explore the unexplored trails of beautiful destinations. We are especially focused on trekking, hiking, walking tours .',
+        photo: "https://res.cloudinary.com/dubzpy7hn/image/upload/v1669533973/upload/2022-11-27T07-26-13.286Z.jpg",
+        name: 'Chandrakala ',
         post: 'Hiker'
     }
 ]

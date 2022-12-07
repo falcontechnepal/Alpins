@@ -1,7 +1,7 @@
 //cardBackground
 .bg {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("../../../public/images/car.jpg");
+    url("https://res.cloudinary.com/dxp4ne8fl/image/upload/v1670324651/mansalu-circuit_i8kztg.jpg");
   object-fit: contain;
 }
 
@@ -9,7 +9,7 @@
 
 // HomePage
 .pageWrapper {
-  background-image: url("../../../public/images/teamImg.jpg");
+  background-image: url("https://res.cloudinary.com/dxp4ne8fl/image/upload/v1670324651/mansalu-circuit_i8kztg.jpg");
   height: auto;
   width: 100%;
   background-size: cover;

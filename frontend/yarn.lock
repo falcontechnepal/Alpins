@@ -999,15 +999,14 @@
     "combined-stream" "^1.0.8"
     "mime-types" "^2.1.12"
 
-"framer-motion@^7.2.1":
-  "integrity" "sha512-bt2ZqqGpPsW6UojYUa5poWQJu3sDr4Dp3IZsdVBYdKUJ8p+9PxOk1fYRAT8lTGGmaC5HFoKrbDXQeKWGAKZz9g=="
-  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-7.2.1.tgz"
-  "version" "7.2.1"
+"framer-motion@^7.6.19":
+  "integrity" "sha512-U+ogwGwNw6Y+pdq6GZB5xvnvLDlq3FTmcKaG5MCUjXuqRLrjKbKTqN4iwZISv3ajwUfgNHM6+tu31LRbYfF9YQ=="
+  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-7.6.19.tgz"
+  "version" "7.6.19"
   dependencies:
     "@motionone/dom" "10.13.1"
     "framesync" "6.1.2"
     "hey-listen" "^1.0.8"
-    "popmotion" "11.0.5"
     "style-value-types" "5.1.2"
     "tslib" "2.4.0"
   optionalDependencies:
@@ -1694,16 +1693,6 @@
   "resolved" "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   "version" "2.3.1"
 
-"popmotion@11.0.5":
-  "integrity" "sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA=="
-  "resolved" "https://registry.npmjs.org/popmotion/-/popmotion-11.0.5.tgz"
-  "version" "11.0.5"
-  dependencies:
-    "framesync" "6.1.2"
-    "hey-listen" "^1.0.8"
-    "style-value-types" "5.1.2"
-    "tslib" "2.4.0"
-
 "popper.js@^1.16.1":
   "integrity" "sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ=="
   "resolved" "https://registry.npmjs.org/popper.js/-/popper.js-1.16.1.tgz"
@@ -1767,10 +1756,10 @@
   "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.40.0.tgz"
   "version" "7.40.0"
 
-"react-icons@^4.6.0":
-  "integrity" "sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g=="
-  "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.6.0.tgz"
-  "version" "4.6.0"
+"react-icons@^4.7.1":
+  "integrity" "sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw=="
+  "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.7.1.tgz"
+  "version" "4.7.1"
 
 "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
