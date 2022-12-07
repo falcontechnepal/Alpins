@@ -8,10 +8,10 @@ const Review = () => {
         <div className="leftBody col-md-8 col-sm-12">
           <div className="row row-cols-1 row-cols-md-1 row-cols-sm-1 row-cols-lg-2">
             <div className="col">
-              <p>Sagar Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip erud exercitation ullamco. Exiquip ex ea commodo con sequat sit amet consectetur adipiscing elitsed do eiusmode.</p>
+              <p>The ancient Himalayas is one of the most preferred traveling agencies in Nepal. You can choose among the multiple packages we provide to spend your precious time that can be the best for your lifetime. Nepal is a country where the tourism industry is one of the biggest industries which means you’ll have plenty of travel during your visit. We provide the best packages, itineraries, and varieties of services to make you satisfied throughout the journey</p>
             </div>
             <div className="col">
-              <p>Loluptate velit esse cillum doloreorem ipsu idunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt uta labore incita ipsum dolor sitscing elitsed do eiusmode.ud exercitation ullamco. Lore mise.</p>
+              <p>The Ancient Himalayas offer a remarkable journey to enjoy the majestic Himalayas with a diversified culture. Nepal, a country with thousands of destinations for trekking and hiking, is the best destination to enjoy your splendid time in nature.</p>
             </div>
           </div>
         </div>

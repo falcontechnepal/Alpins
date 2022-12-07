@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
-import { discover } from "./reviewSource";
 import style from "../../styles/scss/Discovercar.module.scss";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import packages from "../../packages.json";
 
 const initial = {
   hidden: {
@@ -46,15 +46,6 @@ const item = {
 };
 
 const Discovercar = () => {
-  // const controls = useAnimation();
-  // const [ref, inview] = useInView()
-
-  // useEffect(() => {
-  //     if (inView) {
-  //         controls.start('visible')
-  //     }
-  // }, [controls, inView])
-
   const settings = {
     dots: true,
     infinite: true,
@@ -64,7 +55,6 @@ const Discovercar = () => {
     easing: "liner",
     slidesToShow: 3,
     slidesToScroll: 1,
-    // mobileFirst: true,
     responsive: [
       {
         breakpoint: 765,
@@ -87,7 +77,7 @@ const Discovercar = () => {
     <Slider
       {...settings}
       className={style.slider}>
-      {discover.map((discover, index) => (
+      {packages.map((packages: any, index: any) => (
         <motion.div
           variants={initial}
           initial="hidden"
@@ -96,24 +86,23 @@ const Discovercar = () => {
           viewport={{ once: true, amount: 0.8 }}
           key={index}
           className={style.key}>
-          {/* <div className="row row-cols-1"> */}
           <motion.div
             variants={item}
             viewport={{ once: true }}
             className="card-group m-2">
             <div className={`${style.myCard} card border-0`}>
-              <img
-                className="card-img-top"
-                src={discover.image}
+              <Image
+                src={packages.image}
+                width={600}
+                height={300}
                 alt=""
               />
               <div className="card-body p-3">
-                <div className="card-title text-center h4 my-3 fw-bold">{discover.heading}</div>
-                <div className="card-text text-center mb-4">{discover.desc}</div>
+                <div className="card-title text-center h4 my-3 fw-bold upper_case">{packages.id}</div>
+                <div className="card-text text-center mb-4">{packages.description}</div>
               </div>
             </div>
           </motion.div>
-          {/* </div> */}
         </motion.div>
       ))}
     </Slider>

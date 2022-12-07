@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { review } from "./reviewSource";
+import Image from "next/image";
 
 const Reviewcar = () => {
   const settings = {
@@ -32,15 +33,13 @@ const Reviewcar = () => {
               marginLeft: "15px",
             }}></div>
           <div className="d-flex flex-row mt-3 gap-2">
-            <img
+            <Image
               src={review.photo}
-              alt="photo"
-              style={{
-                height: "60px",
-                width: "60px",
-                borderRadius: "50%",
-                objectFit: "cover",
-              }}
+              width={70}
+              height={70}
+              className="rounded-circle"
+              objectFit="cover"
+              alt=""
             />
             <div className="name">
               <h4 className="h4 fw-bold">{review.name}</h4>

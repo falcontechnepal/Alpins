@@ -11,8 +11,9 @@ const Discover = () => {
             <p>Our main services</p>
           </div>
           <div>
-            <p>Lorem ipsum dolor sit e dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a>Contact Us</a>
+            <p>We provide you with an experienced team helping you throughout your journey to complete your trip with comfort and fun.</p>
+
+            <p className="mt-3">We have a successful team of guides and experts who are very enthusiastic about trekking and hiking uphill</p>
           </div>
         </div>
         <div className="col-lg-9">
