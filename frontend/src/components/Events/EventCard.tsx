@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import img3 from "../../../public/images/3.jpeg";
 import EventImageCard from "./EventImageCard";
 import { FaSearchLocation } from "react-icons/fa";
 import { TbMessages } from "react-icons/tb";
@@ -8,6 +7,8 @@ import { RiCalendar2Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 const EventCard = () => {
+  const img = "https://res.cloudinary.com/dxp4ne8fl/image/upload/v1670324651/mansalu-circuit_i8kztg.jpg";
+
   return (
     <div style={{ backgroundColor: "white" }} className="container-fluid">
       <div className="container py-5 ">
@@ -21,7 +22,7 @@ const EventCard = () => {
             >
               <div className="row g-0">
                 <div className="col-md-4">
-                  <Image src={img3} className="img-fluid " alt="..." />
+                  <Image src={img} className="img-fluid " alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
@@ -56,7 +57,7 @@ const EventCard = () => {
             >
               <div className="row g-0">
                 <div className="col-md-4">
-                  <Image src={img3} className="img-fluid " alt="..." />
+                  <Image src={img} className="img-fluid " alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
@@ -91,7 +92,7 @@ const EventCard = () => {
             >
               <div className="row g-0">
                 <div className="col-md-4">
-                  <Image src={img3} className="img-fluid " alt="..." />
+                  <Image src={img} className="img-fluid " alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
@@ -126,7 +127,7 @@ const EventCard = () => {
             >
               <div className="row g-0">
                 <div className="col-md-4">
-                  <Image src={img3} className="img-fluid " alt="..." />
+                  <Image src={img} className="img-fluid " alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
