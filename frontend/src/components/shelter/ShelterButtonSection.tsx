@@ -6,9 +6,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination } from "swiper";
 import Image from "next/image";
-import person1 from "../../../public/images/5.jpeg";
 
 const ShelterButtonSection = () => {
+  const img = "https://res.cloudinary.com/dxp4ne8fl/image/upload/v1670324651/mansalu-circuit_i8kztg.jpg";
+
   return (
     <div>
       {/* 4 button  */}
@@ -106,15 +107,15 @@ const ShelterButtonSection = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <Image src={person1} className=" py-4" alt="..." />
+                      <Image src={img} className=" py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
                   </Swiper>
                 </div>
@@ -174,7 +175,7 @@ const ShelterButtonSection = () => {
                   >
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -182,7 +183,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -190,7 +191,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -198,7 +199,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -206,7 +207,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -252,15 +253,15 @@ const ShelterButtonSection = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <Image src={person1} className=" py-4" alt="..." />
+                      <Image src={img} className=" py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
                   </Swiper>
                 </div>
@@ -297,7 +298,7 @@ const ShelterButtonSection = () => {
                   >
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -305,7 +306,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -313,7 +314,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -321,7 +322,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -329,7 +330,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -371,15 +372,15 @@ const ShelterButtonSection = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <Image src={person1} className=" py-4" alt="..." />
+                      <Image src={img} className=" py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
                   </Swiper>
                 </div>
@@ -416,7 +417,7 @@ const ShelterButtonSection = () => {
                   >
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -424,7 +425,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -432,7 +433,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -440,7 +441,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -448,7 +449,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -490,15 +491,15 @@ const ShelterButtonSection = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <Image src={person1} className=" py-4" alt="..." />
+                      <Image src={img} className=" py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                      <Image src={person1} className="  py-4" alt="..." />
+                      <Image src={img} className="  py-4" alt="..." />
                     </SwiperSlide>
                   </Swiper>
                 </div>
@@ -535,7 +536,7 @@ const ShelterButtonSection = () => {
                   >
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -543,7 +544,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -551,7 +552,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -559,7 +560,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />
@@ -567,7 +568,7 @@ const ShelterButtonSection = () => {
 
                     <SwiperSlide>
                       <Image
-                        src={person1}
+                        src={img}
                         className=" rounded py-2"
                         alt="..."
                       />

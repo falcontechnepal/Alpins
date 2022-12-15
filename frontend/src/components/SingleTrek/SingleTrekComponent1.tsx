@@ -1,8 +1,9 @@
 import Image from "next/image";
-import person1 from "../../../public/person/1.avif";
 import styles from "../../styles/scss/SingleTrek.module.scss";
 
 const SingleTrekComponent1 = () => {
+  const img = "https://res.cloudinary.com/dxp4ne8fl/image/upload/v1670324651/mansalu-circuit_i8kztg.jpg";
+
   return (
     <div style={{ backgroundColor: "white" }} className="container-fluid">
       <div className="container pb-3">
@@ -26,7 +27,7 @@ const SingleTrekComponent1 = () => {
           <div className="col col-sm-12 col-md-12 col-lg-6">
             <div className="row">
               <div className="col col-12 col-md-5 col-lg-5 col-xl-5 mb-4 ">
-                <Image src={person1} alt="..." />
+                <Image src={img} alt="..." />
               </div>
 
               <div className="col-12 col-md-7 ">
